@@ -1,0 +1,1824 @@
+{
+  "semantic/color": {
+    "semantic": {
+      "text": {
+        "primary": {
+          "value": "{scale.gray-950}",
+          "type": "color",
+          "description": "그레이 스케일중 가장 강한 명도를 가지고, 보편적이고 중요한 위계에 사용되는 텍스트 컬러입니다"
+        },
+        "primary-hover": {
+          "value": "{scale.gray-600}",
+          "type": "color",
+          "description": "primary컬러의 마우스 hover 상태를 표현하는 색상입니다"
+        },
+        "primary-pressed": {
+          "value": "{scale.gray-600}",
+          "type": "color",
+          "description": "primary컬러의 pressed 상태를 표현하는 색상입니다"
+        },
+        "secondary": {
+          "value": "{scale.gray-500}",
+          "type": "color",
+          "description": "주요 컬러의 보조적인 성격으로 사용됩니다. 시각 위계적으로 두번째로 눈에 띄는 컬러입니다"
+        },
+        "secondary-hover": {
+          "value": "{scale.gray-400}",
+          "type": "color",
+          "description": "secondary 컬러의 마우스 hover 상태를 표현하는 색상입니다"
+        },
+        "secondary-pressed": {
+          "value": "{scale.gray-400}",
+          "type": "color",
+          "description": "secondary 컬러의 pressed 상태를 표현하는 색상입니다"
+        },
+        "tertiary": {
+          "value": "{scale.gray-400}",
+          "type": "color",
+          "description": "그레이 스케일 중 약한 명도를 가지고 낮은 위계의 정보에 사용되는 컬러입니다. "
+        },
+        "interactive": {
+          "value": "{scale.blue-500}",
+          "type": "color",
+          "description": "강조가 필요한 UI에서 포인트로 사용되는 컬러입니다, 강한 상호강조 표현의 의미를 가지고 있습니다."
+        },
+        "interactive-hover": {
+          "value": "{scale.blue-400}",
+          "type": "color",
+          "description": "interacitve 컬러의 마우스 hover 상태를 표현하는 색상입니다"
+        },
+        "interactive-pressed": {
+          "value": "{scale.blue-400}",
+          "type": "color",
+          "description": "interacitve 컬러의 pressed 상태를 표현하는 색상입니다"
+        },
+        "accent": {
+          "value": "{scale.red-500}",
+          "type": "color",
+          "description": "가장 강한 강조가 필요한 UI에 사용됩니다. 화면에서 아껴서 사용해야합니다"
+        },
+        "disabled": {
+          "value": "{scale.gray-300}",
+          "type": "color",
+          "description": "활성화 되지 않아 작동되지 않는 disabled 상태를 나타냅니다"
+        },
+        "negative": {
+          "value": "{scale.red-600}",
+          "type": "color",
+          "description": "에러 등 주의가 필요한 텍스트에 사용됩니다"
+        },
+        "negative-hover": {
+          "value": "{scale.red-400}",
+          "type": "color",
+          "description": "negative 컬러의 마우스 hover 상태를 표현하는 색상입니다"
+        },
+        "negative-pressed": {
+          "value": "{scale.red-400}",
+          "type": "color",
+          "description": "negative 컬러의 pressed 상태를 표현하는 색상입니다"
+        },
+        "on-color": {
+          "value": "{scale.gray-00}",
+          "type": "color",
+          "description": "배경 컬러 위에 올라가는 텍스트 컬러입니다"
+        }
+      },
+      "background": {
+        "low": {
+          "value": "{scale.gray-100}",
+          "type": "color",
+          "description": "default color보다 아래 위치하는 배경색상입니다. 위계상 default보다 아래에 위치합니다"
+        },
+        "default": {
+          "value": "{scale.gray-00}",
+          "type": "color",
+          "description": "기본적으로 사용되는 배경색상입니다"
+        }
+      },
+      "fill": {
+        "primary-low": {
+          "value": "{scale.gray-100}",
+          "type": "color",
+          "description": "UI의 표면에 사용되는 색상입니다, primary색상과 함께 사용되며 Primary 를 보조하는 역할을 합니다"
+        },
+        "primary": {
+          "value": "{scale.gray-950}",
+          "type": "color",
+          "description": "UI 표면에 사용되는 색상 중 가장 강한 명도를 가지고 높은 위계로 표현되는 색상입니다"
+        },
+        "primary-hover": {
+          "value": "{scale.gray-800}",
+          "type": "color",
+          "description": "primary컬러의 마우스 hover 상태를 표현하는 색상입니다"
+        },
+        "primary-pressed": {
+          "value": "{scale.gray-800}",
+          "type": "color",
+          "description": "primary컬러의 pressed 상태를 표현하는 색상입니다"
+        },
+        "silent": {
+          "value": "{scale.gray-00}",
+          "type": "color",
+          "description": "UI의 표면이 배경색과 같은 색상을 가집니다. 강조하지 않아야하는 UI에 사용합니다 "
+        },
+        "silent-hover": {
+          "value": "{scale.gray-100}",
+          "type": "color",
+          "description": "fill-silent의 마우스 hover 상태 색상입니다 "
+        },
+        "silent-preseed": {
+          "value": "{scale.gray-100}",
+          "type": "color",
+          "description": "fill-silent의 preseed 상태 색상입니다 "
+        },
+        "interactive": {
+          "value": "{scale.blue-500}",
+          "type": "color",
+          "description": "강조가 필요한 UI에서 포인트로 사용되는 컬러입니다, 강한 상호강조 표현의 의미를 가지고 있습니다."
+        },
+        "interactive-hover": {
+          "value": "{scale.blue-400}",
+          "type": "color",
+          "description": "interacitve 컬러의 마우스 hover 상태를 표현하는 색상입니다"
+        },
+        "interactive-pressed": {
+          "value": "{scale.blue-400}",
+          "type": "color",
+          "description": "interacitve 컬러의 pressed 상태를 표현하는 색상입니다"
+        },
+        "accent": {
+          "value": "{scale.red-500}",
+          "type": "color",
+          "description": "가장 강한 강조가 필요한 UI에 사용됩니다. 화면에서 아껴서 사용해야합니다"
+        },
+        "disabled": {
+          "value": "{scale.gray-100}",
+          "type": "color",
+          "description": "활성화 되지 않아 작동되지 않는 disabled 상태를 나타냅니다"
+        },
+        "negative": {
+          "value": "{scale.red-600}",
+          "type": "color",
+          "description": "강조, 에러 등 주의를 알려주는 UI에 사용됩니다."
+        },
+        "negative-hover": {
+          "value": "{scale.red-400}",
+          "type": "color",
+          "description": "negative 컬러의 마우스 hover 상태를 표현하는 색상입니다"
+        },
+        "negative-pressed": {
+          "value": "{scale.red-400}",
+          "type": "color",
+          "description": "negative 컬러의 pressed 상태를 표현하는 색상입니다"
+        }
+      },
+      "border": {
+        "divider-strong": {
+          "value": "{scale.gray-950}",
+          "type": "color",
+          "description": "divider 색상에서 가장 강한 시각적 위계를 가지고 있습니다, 섹션과 섹션 사이 강력한 구분이 필요한 경우 사용합니다"
+        },
+        "divider": {
+          "value": "{scale.gray-100}",
+          "type": "color",
+          "description": "divider에 사용되는 기본 색상입니다"
+        },
+        "line": {
+          "value": "{scale.gray-200}",
+          "type": "color",
+          "description": "UI 외곽선을 표현하는 색상입니다"
+        },
+        "line-hover": {
+          "value": "{scale.gray-400}",
+          "type": "color",
+          "description": "border.line 색상의 마우스 hover 상태를 표현하는 색상입니다"
+        },
+        "line-pressed": {
+          "value": "{scale.gray-400}",
+          "type": "color",
+          "description": "border.line 색상의 pressed 상태를 표현하는 색상입니다"
+        },
+        "line-selected": {
+          "value": "{scale.gray-950}",
+          "type": "color",
+          "description": "border.line 색상의 selected 상태를 표현하는 색상입니다"
+        },
+        "line-negative": {
+          "value": "{scale.red-600}",
+          "type": "color",
+          "description": "UI 내부에서 Error, 경고, 오입력 정보를 표현할 때 사용합니다"
+        },
+        "line-negative-hover": {
+          "value": "{scale.red-400}",
+          "type": "color",
+          "description": "line.negative 색상의 마우스 hover 상태를 표현하는 색상입니다"
+        },
+        "line-negative-pressed": {
+          "value": "{scale.red-400}",
+          "type": "color",
+          "description": "line.negative 색상의 pressed 상태를 표현하는 색상입니다"
+        },
+        "line-disabled": {
+          "value": "{scale.gray-100}",
+          "type": "color",
+          "description": "line.negative의 disabled 표현 색상입니다 "
+        }
+      },
+      "overlay": {
+        "dimmed": {
+          "value": "{static.static-black-alpha-500}",
+          "type": "color",
+          "description": "#000000 50% , 화면 위에 덧씌워지는 불투명 스크린 색상입니다"
+        }
+      }
+    }
+  },
+  "semantic/typography": {
+    "title-xxl": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{regular-400}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-550}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "30/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-xxl-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-550}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "30/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-xxl-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-550}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "30/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-xl-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-500}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "28/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-xl-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-500}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "28/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-l-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-400}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "24/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-l-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-400}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "24/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-m-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-350}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "22/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-m-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-350}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "22/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-s-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-300}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "20/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-s-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-300}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "20/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-xs-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-250}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "18/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "title-xs-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-250}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "18/타이틀 스타일은 사용자가 알아야할 정보와 개념을 강조하고 페이지나 섹션을 명확하게 설명해야 합니다"
+    },
+    "text-xxl-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-4}",
+        "fontSize": "{font-size-200}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "16/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-xxl-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-4}",
+        "fontSize": "{font-size-200}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "16/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다. 2줄 이상의 텍스트에는 Bold Weight사용을 자제하세요"
+    },
+    "text-xxl": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{regular-400}",
+        "lineHeight": "{line-height-4}",
+        "fontSize": "{font-size-200}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "16/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-xl": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{regular-400}",
+        "lineHeight": "{line-height-5}",
+        "fontSize": "{font-size-150}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "15/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-xl-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-5}",
+        "fontSize": "{font-size-150}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "15/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-xl-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-5}",
+        "fontSize": "{font-size-150}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "15/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다. 2줄 이상의 텍스트에는 Bold Weight사용을 자제하세요"
+    },
+    "text-l": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{regular-400}",
+        "lineHeight": "{line-height-4}",
+        "fontSize": "{font-size-125}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "14/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-l-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-4}",
+        "fontSize": "{font-size-125}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "14/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-l-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-4}",
+        "fontSize": "{font-size-125}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "14/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다. 2줄 이상의 텍스트에는 Bold Weight사용을 자제하세요"
+    },
+    "text-m": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{regular-400}",
+        "lineHeight": "{line-height-4}",
+        "fontSize": "{font-size-100}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "13/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-m-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-4}",
+        "fontSize": "{font-size-100}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "13/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-m-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-4}",
+        "fontSize": "{font-size-100}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "13/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다. 2줄 이상의 텍스트에는 Bold Weight사용을 자제하세요"
+    },
+    "text-s": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{regular-400}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-75}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "12/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-s-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-75}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "12/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다"
+    },
+    "text-s-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-75}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "12/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다. 2줄 이상의 텍스트에는 Bold Weight사용을 자제하세요"
+    },
+    "text-xs-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-50}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "11/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다."
+    },
+    "text-xs": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{regular-400}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-50}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "11/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다."
+    },
+    "text-xs-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-3}",
+        "fontSize": "{font-size-50}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "11/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다. 2줄 이상의 텍스트에는 Bold Weight사용을 자제하세요"
+    },
+    "text-xxs": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{regular-400}",
+        "lineHeight": "{line-height-2}",
+        "fontSize": "{font-size-25}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "10/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다."
+    },
+    "text-xxs-medium": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{medium-500}",
+        "lineHeight": "{line-height-2}",
+        "fontSize": "{font-size-25}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "10/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다."
+    },
+    "text-xxs-bold": {
+      "value": {
+        "fontFamily": "{29cm-default-font}",
+        "fontWeight": "{bold-700}",
+        "lineHeight": "{line-height-2}",
+        "fontSize": "{font-size-25}",
+        "letterSpacing": "{narrow-base.web}",
+        "paragraphSpacing": "",
+        "paragraphIndent": "",
+        "textCase": "",
+        "textDecoration": ""
+      },
+      "type": "typography",
+      "description": "10/주요 정보에는 14이하로 작은 폰트의 사용을 권장하지 않습니다!/텍스트 스타일은 페이지,UI안에서 사용자의 이해를 돕기 위해 내용을 보조할 때 사용합니다."
+    }
+  },
+  "scale/color/light": {
+    "scale": {
+      "gray-00": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "gray-100": {
+        "value": "#f4f4f4",
+        "type": "color"
+      },
+      "gray-200": {
+        "value": "#e4e4e4",
+        "type": "color"
+      },
+      "gray-300": {
+        "value": "#c4c4c4",
+        "type": "color"
+      },
+      "gray-400": {
+        "value": "#a0a0a0",
+        "type": "color"
+      },
+      "gray-500": {
+        "value": "#5d5d5d",
+        "type": "color"
+      },
+      "gray-600": {
+        "value": "#474747",
+        "type": "color"
+      },
+      "gray-700": {
+        "value": "#303033",
+        "type": "color"
+      },
+      "gray-800": {
+        "value": "#27272A",
+        "type": "color"
+      },
+      "gray-900": {
+        "value": "#19191A",
+        "type": "color"
+      },
+      "gray-950": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "red-100": {
+        "value": "#ffefeb",
+        "type": "color"
+      },
+      "red-200": {
+        "value": "#ffbfaa",
+        "type": "color"
+      },
+      "red-300": {
+        "value": "#ff916c",
+        "type": "color"
+      },
+      "red-400": {
+        "value": "#ff6933",
+        "type": "color"
+      },
+      "red-500": {
+        "value": "#ff4800",
+        "type": "color"
+      },
+      "red-600": {
+        "value": "#d53f00",
+        "type": "color"
+      },
+      "red-700": {
+        "value": "#ab3803",
+        "type": "color"
+      },
+      "red-800": {
+        "value": "#823107",
+        "type": "color"
+      },
+      "red-900": {
+        "value": "#582609",
+        "type": "color"
+      },
+      "red-950": {
+        "value": "#2e1608",
+        "type": "color"
+      },
+      "blue-100": {
+        "value": "#ebf1ff",
+        "type": "color"
+      },
+      "blue-200": {
+        "value": "#b8cdff",
+        "type": "color"
+      },
+      "blue-300": {
+        "value": "#86a5ff",
+        "type": "color"
+      },
+      "blue-400": {
+        "value": "#5b7fff",
+        "type": "color"
+      },
+      "blue-500": {
+        "value": "#375fff",
+        "type": "color"
+      },
+      "blue-600": {
+        "value": "#203ff6",
+        "type": "color"
+      },
+      "blue-700": {
+        "value": "#1025e5",
+        "type": "color"
+      },
+      "blue-800": {
+        "value": "#0611bd",
+        "type": "color"
+      },
+      "blue-900": {
+        "value": "#010474",
+        "type": "color"
+      },
+      "blue-950": {
+        "value": "#000033",
+        "type": "color"
+      },
+      "yellow-100": {
+        "value": "#fff7f0",
+        "type": "color"
+      },
+      "yellow-200": {
+        "value": "#ffdfb9",
+        "type": "color"
+      },
+      "yellow-300": {
+        "value": "#ffc97f",
+        "type": "color"
+      },
+      "yellow-400": {
+        "value": "#ffb741",
+        "type": "color"
+      },
+      "yellow-500": {
+        "value": "#ffa800",
+        "type": "color"
+      },
+      "yellow-600": {
+        "value": "#d18d16",
+        "type": "color"
+      },
+      "yellow-700": {
+        "value": "#a37021",
+        "type": "color"
+      },
+      "yellow-800": {
+        "value": "#755322",
+        "type": "color"
+      },
+      "yellow-900": {
+        "value": "#47341b",
+        "type": "color"
+      },
+      "yellow-950": {
+        "value": "#19130c",
+        "type": "color"
+      },
+      "green-100": {
+        "value": "#eefee6",
+        "type": "color"
+      },
+      "green-200": {
+        "value": "#c2eeb2",
+        "type": "color"
+      },
+      "green-300": {
+        "value": "#81dc71",
+        "type": "color"
+      },
+      "green-400": {
+        "value": "#3fcb3c",
+        "type": "color"
+      },
+      "green-500": {
+        "value": "#12ba23",
+        "type": "color"
+      },
+      "green-600": {
+        "value": "#139e14",
+        "type": "color"
+      },
+      "green-700": {
+        "value": "#1e8215",
+        "type": "color"
+      },
+      "green-800": {
+        "value": "#246616",
+        "type": "color"
+      },
+      "green-900": {
+        "value": "#234a15",
+        "type": "color"
+      },
+      "green-950": {
+        "value": "#1b2e11",
+        "type": "color"
+      }
+    }
+  },
+  "scale/color/dark": {
+    "scale": {
+      "gray-00": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "gray-100": {
+        "value": "#19191A",
+        "type": "color"
+      },
+      "gray-200": {
+        "value": "#27272A",
+        "type": "color"
+      },
+      "gray-300": {
+        "value": "#303033",
+        "type": "color"
+      },
+      "gray-400": {
+        "value": "#474747",
+        "type": "color"
+      },
+      "gray-500": {
+        "value": "#5d5d5d",
+        "type": "color"
+      },
+      "gray-600": {
+        "value": "#a0a0a0",
+        "type": "color"
+      },
+      "gray-700": {
+        "value": "#c4c4c4",
+        "type": "color"
+      },
+      "gray-800": {
+        "value": "#e4e4e4",
+        "type": "color"
+      },
+      "gray-900": {
+        "value": "#f4f4f4",
+        "type": "color"
+      },
+      "gray-950": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "red-100": {
+        "value": "#2e1608",
+        "type": "color"
+      },
+      "red-200": {
+        "value": "#582509",
+        "type": "color"
+      },
+      "red-300": {
+        "value": "#822f07",
+        "type": "color"
+      },
+      "red-400": {
+        "value": "#ab3703",
+        "type": "color"
+      },
+      "red-500": {
+        "value": "#d53e00",
+        "type": "color"
+      },
+      "red-600": {
+        "value": "#ff4800",
+        "type": "color"
+      },
+      "red-700": {
+        "value": "#ff6c37",
+        "type": "color"
+      },
+      "red-800": {
+        "value": "#ff9672",
+        "type": "color"
+      },
+      "red-900": {
+        "value": "#ffc3b0",
+        "type": "color"
+      },
+      "red-950": {
+        "value": "#ffefeb",
+        "type": "color"
+      },
+      "blue-100": {
+        "value": "#000033",
+        "type": "color"
+      },
+      "blue-200": {
+        "value": "#01058b",
+        "type": "color"
+      },
+      "blue-300": {
+        "value": "#0510be",
+        "type": "color"
+      },
+      "blue-400": {
+        "value": "#0e22dd",
+        "type": "color"
+      },
+      "blue-500": {
+        "value": "#1e3cf2",
+        "type": "color"
+      },
+      "blue-600": {
+        "value": "#375fff",
+        "type": "color"
+      },
+      "blue-700": {
+        "value": "#5f83ff",
+        "type": "color"
+      },
+      "blue-800": {
+        "value": "#8dabff",
+        "type": "color"
+      },
+      "blue-900": {
+        "value": "#bdd1ff",
+        "type": "color"
+      },
+      "blue-950": {
+        "value": "#ebf1ff",
+        "type": "color"
+      },
+      "yellow-100": {
+        "value": "#1a130c",
+        "type": "color"
+      },
+      "yellow-200": {
+        "value": "#47341c",
+        "type": "color"
+      },
+      "yellow-300": {
+        "value": "#755323",
+        "type": "color"
+      },
+      "yellow-400": {
+        "value": "#a37122",
+        "type": "color"
+      },
+      "yellow-500": {
+        "value": "#d18d17",
+        "type": "color"
+      },
+      "yellow-600": {
+        "value": "#ffa800",
+        "type": "color"
+      },
+      "yellow-700": {
+        "value": "#ffb741",
+        "type": "color"
+      },
+      "yellow-800": {
+        "value": "#ffc97f",
+        "type": "color"
+      },
+      "yellow-900": {
+        "value": "#ffdfb9",
+        "type": "color"
+      },
+      "yellow-950": {
+        "value": "#fff7f0",
+        "type": "color"
+      },
+      "green-100": {
+        "value": "#1b2e11",
+        "type": "color"
+      },
+      "green-200": {
+        "value": "#234a15",
+        "type": "color"
+      },
+      "green-300": {
+        "value": "#246616",
+        "type": "color"
+      },
+      "green-400": {
+        "value": "#1e8214",
+        "type": "color"
+      },
+      "green-500": {
+        "value": "#129e14",
+        "type": "color"
+      },
+      "green-600": {
+        "value": "#12ba23",
+        "type": "color"
+      },
+      "green-700": {
+        "value": "#42cb3e",
+        "type": "color"
+      },
+      "green-800": {
+        "value": "#85dd76",
+        "type": "color"
+      },
+      "green-900": {
+        "value": "#c5eeb6",
+        "type": "color"
+      },
+      "green-950": {
+        "value": "#EEFEE6",
+        "type": "color"
+      }
+    }
+  },
+  "scale/corner-radius": {
+    "corner-radius-25": {
+      "value": "2",
+      "type": "borderRadius"
+    },
+    "corner-radius-50": {
+      "value": "4",
+      "type": "borderRadius"
+    },
+    "corner-radius-100": {
+      "value": "8",
+      "type": "borderRadius"
+    },
+    "corner-radius-full": {
+      "value": "9999",
+      "type": "borderRadius"
+    }
+  },
+  "scale/dimension-font-size": {
+    "font-size-25": {
+      "value": "10",
+      "type": "fontSizes"
+    },
+    "font-size-50": {
+      "value": "11",
+      "type": "fontSizes"
+    },
+    "font-size-75": {
+      "value": "12",
+      "type": "fontSizes"
+    },
+    "font-size-100": {
+      "value": "13",
+      "type": "fontSizes"
+    },
+    "font-size-125": {
+      "value": "14",
+      "type": "fontSizes"
+    },
+    "font-size-150": {
+      "value": "15",
+      "type": "fontSizes"
+    },
+    "font-size-200": {
+      "value": "16",
+      "type": "fontSizes"
+    },
+    "font-size-250": {
+      "value": "18",
+      "type": "fontSizes"
+    },
+    "font-size-300": {
+      "value": "20",
+      "type": "fontSizes"
+    },
+    "font-size-350": {
+      "value": "22",
+      "type": "fontSizes"
+    },
+    "font-size-400": {
+      "value": "24",
+      "type": "fontSizes"
+    },
+    "font-size-500": {
+      "value": "28",
+      "type": "fontSizes"
+    },
+    "font-size-550": {
+      "value": "30",
+      "type": "fontSizes"
+    },
+    "font-size-600": {
+      "value": "32",
+      "type": "fontSizes"
+    },
+    "font-size-1000": {
+      "value": "48",
+      "type": "fontSizes"
+    }
+  },
+  "scale/dimension-size": {
+    "dimension-25": {
+      "value": "2",
+      "type": "dimension"
+    },
+    "dimension-50": {
+      "value": "4",
+      "type": "dimension"
+    },
+    "dimension-100": {
+      "value": "8",
+      "type": "dimension"
+    },
+    "dimension-125": {
+      "value": "10",
+      "type": "dimension"
+    },
+    "dimension-150": {
+      "value": "12",
+      "type": "dimension"
+    },
+    "dimension-200": {
+      "value": "16",
+      "type": "dimension"
+    },
+    "dimension-225": {
+      "value": "18",
+      "type": "dimension"
+    },
+    "dimension-250": {
+      "value": "20",
+      "type": "dimension"
+    },
+    "dimension-300": {
+      "value": "24",
+      "type": "dimension"
+    },
+    "dimension-350": {
+      "value": "28",
+      "type": "dimension"
+    },
+    "dimension-375": {
+      "value": "30",
+      "type": "dimension"
+    },
+    "dimension-400": {
+      "value": "32",
+      "type": "dimension"
+    },
+    "dimension-500": {
+      "value": "40",
+      "type": "dimension"
+    },
+    "dimension-600": {
+      "value": "48",
+      "type": "dimension"
+    },
+    "dimension-700": {
+      "value": "56",
+      "type": "dimension"
+    },
+    "dimension-750": {
+      "value": "60",
+      "type": "dimension"
+    }
+  },
+  "scale/font-weight": {
+    "thin-100": {
+      "value": "100",
+      "type": "fontWeights"
+    },
+    "extraLight-200": {
+      "value": "200",
+      "type": "fontWeights"
+    },
+    "light-300": {
+      "value": "300",
+      "type": "fontWeights"
+    },
+    "regular-400": {
+      "value": "400",
+      "type": "fontWeights"
+    },
+    "medium-500": {
+      "value": "500",
+      "type": "fontWeights"
+    },
+    "semibold-600": {
+      "value": "600",
+      "type": "fontWeights"
+    },
+    "bold-700": {
+      "value": "700",
+      "type": "fontWeights"
+    },
+    "extraBold-800": {
+      "value": "800",
+      "type": "fontWeights"
+    }
+  },
+  "scale/letter-spacing": {
+    "narrow-base": {
+      "ios": {
+        "value": "0",
+        "type": "letterSpacing"
+      },
+      "android": {
+        "value": "-0.5",
+        "type": "letterSpacing"
+      },
+      "web": {
+        "value": "0",
+        "type": "letterSpacing"
+      }
+    }
+  },
+  "scale/line-height": {
+    "line-height-1": {
+      "value": "100%",
+      "type": "lineHeights"
+    },
+    "line-height-2": {
+      "value": "120%",
+      "type": "lineHeights"
+    },
+    "line-height-3": {
+      "value": "136%",
+      "type": "lineHeights"
+    },
+    "line-height-4": {
+      "value": "140%",
+      "type": "lineHeights"
+    },
+    "line-height-5": {
+      "value": "150%",
+      "type": "lineHeights"
+    },
+    "line-height-6": {
+      "value": "160%",
+      "type": "lineHeights"
+    }
+  },
+  "static-scale/color": {
+    "static": {
+      "static-black": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "static-white": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "static-black-alpha-200": {
+        "value": "#00000020",
+        "type": "color"
+      },
+      "static-black-alpha-500": {
+        "value": "#00000080",
+        "type": "color"
+      },
+      "static-black-alpha-900": {
+        "value": "#000000e6",
+        "type": "color"
+      }
+    }
+  },
+  "static-scale/font-family": {
+    "pretendard": {
+      "value": "Pretendard",
+      "type": "fontFamilies"
+    },
+    "29cm-default-font": {
+      "value": "Pretendard",
+      "type": "fontFamilies"
+    }
+  },
+  "$themes": [
+    {
+      "id": "18b4fed5dac802e401cc6623357e63653fb49894",
+      "name": "light",
+      "$figmaStyleReferences": {
+        "static.static-black": "S:3dc05a18cd394b32b7986fcf71129fa73536db80,",
+        "static.static-white": "S:ac913890e8015b7e33b445135a27f23fce00901e,",
+        "static.static-black-alpha-200": "S:941a0e5192f9caa25b09bc8cf5cdca43e184b539,",
+        "static.static-black-alpha-500": "S:bf0d29e8b8233c9552205c8b04fd358506f012dc,",
+        "static.static-black-alpha-900": "S:41190395354cd9a55154f1f741c0204ae13fae51,",
+        "scale.gray-00": "S:cd5f7dd9ef38c4b228b15539bbe403e687d3d3e3,",
+        "scale.gray-100": "S:4771db4ea35c452c1fbcbf82fe50549f23bc1b9d,",
+        "scale.gray-200": "S:70d0f93aefd5826f7647640a6196131e58631e62,",
+        "scale.gray-300": "S:4459887038c5aa5c2bc417fcd3a8cde557332767,",
+        "scale.gray-400": "S:7b63cffeae6263400ff0ce42b9c3abcaeae06550,",
+        "scale.gray-500": "S:4d97cafa5ead383901ea330cee65eef323cc4e36,",
+        "scale.gray-600": "S:c34115c1d83a09b6edbf5b0448ff366eaf0b6ced,",
+        "scale.gray-700": "S:2a4e04ff4946edaf34e6e0f8410159229a7827e1,",
+        "scale.gray-800": "S:d48b1ba0140fecbef05621fcc13567cf2261f192,",
+        "scale.gray-900": "S:04b43aedf6f0a73d896e4bd013f657d688f3827a,",
+        "scale.gray-950": "S:734feba25e38d4a29f1696194eb0d80840b75dc7,",
+        "scale.red-100": "S:025cf17fa6e5733c1e13a86fa52f11a788d264de,",
+        "scale.red-200": "S:531ae36891690ee3b6f4e4a496498a43214a8e25,",
+        "scale.red-300": "S:a7269d3f1f9908f0464c648aceaaab2e567008c1,",
+        "scale.red-400": "S:9c61bddc50b890e11d595a5621bb49b44a2cf4be,",
+        "scale.red-500": "S:59d9a66cf4dac182350627d3bbda43ac516b3dd1,",
+        "scale.red-600": "S:6baaa9d19aea136027365c26a730a4531e243a67,",
+        "scale.red-700": "S:53ab0d152b486d7c4f1adf21330c09b214792124,",
+        "scale.red-800": "S:4e5611e15303e78364b24350372101c6df0ddf23,",
+        "scale.red-900": "S:52a9e037ebf3bd8dcbd083ad32c47f13535f0926,",
+        "scale.red-950": "S:88fb3639034328527d6c4abae4ae7dcdba317de9,",
+        "scale.blue-100": "S:323abc8ada8eab07a40783780d88c1bd0249f11c,",
+        "scale.blue-200": "S:693be6a16faeb393085713ddba5bebb52ae2d3ac,",
+        "scale.blue-300": "S:cc3780457d011e242ecb5bdec7e3fbc668550bed,",
+        "scale.blue-400": "S:5951b1264fe8b8c28054176c10389632eba347d8,",
+        "scale.blue-500": "S:51232418780ebb8c761d33b30e697e41a9902534,",
+        "scale.blue-600": "S:a028ed11ce71f1ec7def1d6ac441709556f385be,",
+        "scale.blue-700": "S:6466e62a9bbfeab61cecb92d1ac9fd1138a5142d,",
+        "scale.blue-800": "S:d31587c8b0035a7f161197a978685484cdbc823a,",
+        "scale.blue-900": "S:a1efa446d97e70b807e543c03743f7b4625d7aa5,",
+        "scale.blue-950": "S:f74e6609db48599e1d387b98a1cb9f1f85f22bfc,",
+        "scale.yellow-100": "S:9e91d6935e0a3f02a925ce7f4b474662aeab9eb7,",
+        "scale.yellow-200": "S:9ce66db7644dec13e0efe39caa8871332637cc6e,",
+        "scale.yellow-300": "S:a4522112564002d52ec1059ed8efec809daaee0e,",
+        "scale.yellow-400": "S:54d59ebc87e324da63010b005ce5aeba9edf86b4,",
+        "scale.yellow-500": "S:91881493c292ed6fa0098dec0ffafb6c046b3319,",
+        "scale.yellow-600": "S:802a9cb789b0b59963cf52f9fd481fdc1d8cffbe,",
+        "scale.yellow-700": "S:cfb22d612da6ac25b8d1ed9c043e6fca26a90aa1,",
+        "scale.yellow-800": "S:a9b9c2a33d9ea49132c7436c4fd558bf89713d4e,",
+        "scale.yellow-900": "S:ccb3868fb47ee44d1a6db6c838769b77cbd2e4c6,",
+        "scale.yellow-950": "S:208500345118cd2dd90263c03fd73e4d46f8e9c3,",
+        "scale.green-100": "S:53bd7449f00ce3232fd199c805014605b32fc871,",
+        "scale.green-200": "S:c59e15e29dd895a8f551b65971e007deb33bcc91,",
+        "scale.green-300": "S:0612e9d8ea05a94a143b6a1817643c8f98c1ba99,",
+        "scale.green-400": "S:311c7e7b0917bfc50d5f18e803c1af1faea366a2,",
+        "scale.green-500": "S:928b605959f5ecc68ff44a056de86124b06c0050,",
+        "scale.green-600": "S:7da6d475a0ed9c8d7557f2c1ea7b7775cba359d3,",
+        "scale.green-700": "S:9e94ee8d9d4dc348ea5b320eb2aeb65ca3402b22,",
+        "scale.green-800": "S:6ce4aaf95aecb1c0e6e96676cb4ab4039d86cc31,",
+        "scale.green-900": "S:9734191a038943250cc820b85415a547170821aa,",
+        "scale.green-950": "S:0ac54ab15f9bf32095ed4e5c6f366c3394ca7420,",
+        "semantic.text.primary": "S:059d7aef26f0fccb32c12be01aa794257d08ddb3,",
+        "semantic.text.primary-hover": "S:d31e403c1fa09a562060b6758c455d4780e24b9a,",
+        "semantic.text.primary-pressed": "S:c52f661a3234591a70248846d91569bf7bfb2267,",
+        "semantic.text.secondary": "S:e0ba949bda1cf3df3391857d3c308d70e8e916ba,",
+        "semantic.text.secondary-hover": "S:748ad858377a8537ac5c893053f36f40012f2028,",
+        "semantic.text.secondary-pressed": "S:d3448e5723001a8d91d67ff2b1e596d11e261784,",
+        "semantic.text.tertiary": "S:82599aa736ac5cb62859bf505aebcbe35d0551aa,",
+        "semantic.text.interactive": "S:d3d913e7a666b699a171c10e898eac96f809f786,",
+        "semantic.text.interactive-hover": "S:f6e5c27fa824222e46c3fb5d821122e682bcc95e,",
+        "semantic.text.interactive-pressed": "S:e2ff019c8aaff49b853c43ef45cc3da85534f3fe,",
+        "semantic.text.accent": "S:484d2080faae5921e5dec9f5cdc7c59f6ab33162,",
+        "semantic.text.disabled": "S:d0a1fd7ed0a1b67767b64f1e7ba2540bafec93de,",
+        "semantic.text.negative": "S:a87540cf29dcd905df54705409194386ab3caafb,",
+        "semantic.text.negative-hover": "S:590b8c29a9b798c421d1898774037c22031a6006,",
+        "semantic.text.negative-pressed": "S:749be9702d7fae874d4ffcefb5dcb1a1cc15a9ae,",
+        "semantic.text.on-color": "S:3b51ad4b10925a8240050fc5c1eb66f214bab3e0,",
+        "semantic.background.low": "S:bf54362537eb6d60259fdf91dc7453776464110f,",
+        "semantic.background.default": "S:6a041d1f0e3d7d267ab5f347306c7aca51a2a639,",
+        "semantic.fill.primary-low": "S:06988ab086701a6f9bbe9654add17ce20196af7a,",
+        "semantic.fill.primary": "S:0ba5775d05e7b7f8f3e92b7ae9552f545f8890e6,",
+        "semantic.fill.primary-hover": "S:4002936b84746e4e641ee2a9956a37d95c2ec661,",
+        "semantic.fill.primary-pressed": "S:a76b59feb52a822d1f7de2b16ade94670c6aa756,",
+        "semantic.fill.silent": "S:f885de9d75bbb561c3d97330930c8c46f7de7f11,",
+        "semantic.fill.silent-hover": "S:a54a19ca7e7193156a492f2ecbb49979cca8036d,",
+        "semantic.fill.silent-preseed": "S:93508d263186c68274d8c74400185344c8f62818,",
+        "semantic.fill.interactive": "S:68d7947fd41bc8c4ea8a2cbd2aeba5b772fe7666,",
+        "semantic.fill.interactive-hover": "S:b61c6c3bd950b5861f2efd414c9ab43dd079d55d,",
+        "semantic.fill.interactive-pressed": "S:fb71fdb03ca49cc788048a8ae9f1edc8b30e51d1,",
+        "semantic.fill.accent": "S:ebd1dfac00762c1532cf5b92109bde4056113d0d,",
+        "semantic.fill.disabled": "S:cc62ae02c732f6d63aed36d8d3086e3c7c2f93c2,",
+        "semantic.fill.negative": "S:2dc5031189aa91da5057d812e9bdde780172d9df,",
+        "semantic.fill.negative-hover": "S:a949559d730d3dc9653547ac4c9f09958330adb8,",
+        "semantic.fill.negative-pressed": "S:099ca9156d51cfb922c50fc57be77852c00e84fa,",
+        "semantic.border.divider-strong": "S:f0939f7b0583a255047a9959da45c1dbdf454267,",
+        "semantic.border.divider": "S:ee86ab5c4f9ed2ce05b75f43e32b7fe7d5901fd3,",
+        "semantic.border.line": "S:6a138f0c9aac5176f6f90d629936722d1e1cab56,",
+        "semantic.border.line-hover": "S:c0d0f62041dbab79bfae5a11cd9d6d68592ef716,",
+        "semantic.border.line-pressed": "S:f706c858440fccc55de89b11a96b30d0a0ab3108,",
+        "semantic.border.line-selected": "S:c4dbaf65239ee36ce91c8ebd2364e750491fbb47,",
+        "semantic.border.line-negative": "S:741082014d65b6495aecd1dc467d0b855d6ec9dd,",
+        "semantic.border.line-negative-hover": "S:f9eb3915cf0270881e89798d4cfc02ed829d0905,",
+        "semantic.border.line-negative-pressed": "S:7a6e0c4fa7a8f0a4aa2acd14df3421656329948a,",
+        "semantic.border.line-disabled": "S:b44244a44f7e913c56e03ec5ecf44af7f709fc06,",
+        "semantic.overlay.dimmed": "S:f8aee71c06e36442a6dd23efa0dc8685025f58a8,"
+      },
+      "selectedTokenSets": {
+        "scale/color/light": "enabled",
+        "scale/corner-radius": "enabled",
+        "scale/dimension-font-size": "enabled",
+        "scale/dimension-size": "enabled",
+        "scale/font-weight": "enabled",
+        "scale/letter-spacing": "enabled",
+        "scale/line-height": "enabled",
+        "semantic/color": "enabled",
+        "semantic/typography": "enabled",
+        "static-scale/color": "enabled",
+        "static-scale/font-family": "enabled"
+      },
+      "$figmaCollectionId": "VariableCollectionId:529:2721",
+      "$figmaModeId": "529:3",
+      "$figmaVariableReferences": {
+        "static.static-black": "c356e8cbc0b1b2abc88006602cb03b801eeb4db7",
+        "static.static-white": "f51fa6869a927a67a1ee8e5d5ae0615ee4598ab9",
+        "static.static-black-alpha-200": "6e3e596d13abdbb6ce445fcefbd8abbc76d79d5a",
+        "static.static-black-alpha-500": "aebb6c7aa224ea0f867e72dd6229491c94cdbc8b",
+        "static.static-black-alpha-900": "dd3e6c25b40d68edfcb3bf8b296f9cd88a8ca588",
+        "scale.gray-00": "c2924e140d5971780190a69d8a2739d3599eeb3f",
+        "scale.gray-100": "2501ed766828751b55092d44930afeec7a0f0081",
+        "scale.gray-200": "3f458dd17f7ed853b7b40813ad280c8e099038c0",
+        "scale.gray-300": "24a3ffc45c0268db79ef4f813e43bea4fdc3f385",
+        "scale.gray-400": "ddde5393667cfe790384eab7dcf887193d2a4692",
+        "scale.gray-500": "7cd1b71860be132f2c8a456e313922c4346d2aaf",
+        "scale.gray-600": "5d1eb2802d5527d275f8dc07f14bdf71a7dfe4dc",
+        "scale.gray-700": "8bddb98c1a84df0d503bfeaa55c5229de4a0f587",
+        "scale.gray-800": "339d8c41f78f031faf9104f1345f3a574e1ff56c",
+        "scale.gray-900": "3a77b37690f3d7362414cdaecaf0046856a122a8",
+        "scale.gray-950": "d2a07d591af8bc0920abae9832ecc35ac64efbd0",
+        "scale.red-100": "41fc8b15d25bdce8c9125e6bb412afa19f9be19a",
+        "scale.red-200": "38313fcb243e403a2cec989c1931531efd41e952",
+        "scale.red-300": "59e86cf543a5620e655e2559ec2b123dd7ccc68a",
+        "scale.red-400": "f8e2cc60608121a7046c2c17716c6b8f952856e5",
+        "scale.red-500": "39c03887705f02a8ccc3aa437be6419a11485a4c",
+        "scale.red-600": "db5207aff9d57338ca0c6be993a8eb1b0c50e7bb",
+        "scale.red-700": "d4aa434ff90acb61ddd35ab736af135600279516",
+        "scale.red-800": "97001faa6e44d623124142837b4e9c7c48c8e9d0",
+        "scale.red-900": "1fb472b1e593e3b031ff5d55e158406163021198",
+        "scale.red-950": "b8490bc4b431783157fb59999de4f21a034d79a3",
+        "scale.blue-100": "a2f56ed42b55d4d2cfab3b06ae37841f0877a028",
+        "scale.blue-200": "47aab4206228d46da201a9491d5a1e847d0aa717",
+        "scale.blue-300": "2ea25a2b238a57750a033627fe2bb7b29a1c321a",
+        "scale.blue-400": "961b451bac67b67e953eb75258494afd3e191201",
+        "scale.blue-500": "5d413ef4081d2c5d583af3cc267540373b1b2ffc",
+        "scale.blue-600": "7fa032718c2f3394c781ee3d788b2911610b9f27",
+        "scale.blue-700": "eba95fbac09536950b88346d31e5b1020d100d11",
+        "scale.blue-800": "41a6a0b788dfe69d79701f17a9566277d1a09b6f",
+        "scale.blue-900": "44b23035d204ff0c57846bfe5e9af0280df2e1db",
+        "scale.blue-950": "4bea0dbeeaca41cb26aecf87328ad22fdb9ed87b",
+        "scale.yellow-100": "f41478775594c251f1dce380e062bacdbd02c9c2",
+        "scale.yellow-200": "bcbdc37d85a22e77fd3f0a0f6ee0ee0670aa4d55",
+        "scale.yellow-300": "0b0275e994b23529d2497bbb284290fdd625903d",
+        "scale.yellow-400": "ff54c56fbcdf459bc4ebede516d94ca56e5cb393",
+        "scale.yellow-500": "243d789aaf09714c5b0835828e5e8de2e9e28bf0",
+        "scale.yellow-600": "2aea0be42510096ce900da93117a977409377d8e",
+        "scale.yellow-700": "e04af0ca8338862578c5a11d1d74fce1b269c5b2",
+        "scale.yellow-800": "25b6027673e2846ac5e4ae956b55fd940c3efb4a",
+        "scale.yellow-900": "e6e8de983da8037fe93486da8c36928c36619686",
+        "scale.yellow-950": "cb85b3505808d3108075663e8b9e6296bc9f401b",
+        "scale.green-100": "0b28f9f178f91fb79e40f6653b1234ae88fcb3b5",
+        "scale.green-200": "7c692579230d27d2752e4aea03e04a513536f56d",
+        "scale.green-300": "0a32f6368232fca39966d11e3689908b2664ef81",
+        "scale.green-400": "035fd2e4af772f88a1841d4e3265ec42e72c601f",
+        "scale.green-500": "ea5a2c22c06fc4ba14a5a21469dea3181a5529cf",
+        "scale.green-600": "590e2a2125ebbb55b1c60388df6e574fe25a79b6",
+        "scale.green-700": "a1306d891da8544ad25bee3a1d43ae8525b283cd",
+        "scale.green-800": "cf04d9aeae24a483675fc3780af84fc9f752305f",
+        "scale.green-900": "48c06dc5ea7af2cf7e101e2e66ef76d388dbddf0",
+        "scale.green-950": "b3126306bed19f1a87d5a9ead26701af09b242b8",
+        "semantic.text.primary": "772bd8dc582353fa2c18ba43109d09d553fa130d",
+        "semantic.text.primary-hover": "52f4bb91db1edb9c9ffc669e05f24a6c0801f5a7",
+        "semantic.text.primary-pressed": "d93a0ea4e13a338dbaed91ab78da11004d366603",
+        "semantic.text.secondary": "7b656fe35281e018e66f21ff58c35d7341f0ec7c",
+        "semantic.text.secondary-hover": "078c5a0616da2aa70608fb3108e04460cdc9db68",
+        "semantic.text.secondary-pressed": "f5c88c1fa254f7f318d29a8b9e332a0bf279c9a2",
+        "semantic.text.tertiary": "0389f14151330f6e343c735eb641fbd37e260210",
+        "semantic.text.interactive": "c11e2f45766f0f7ea84fff78f233bf0032659fca",
+        "semantic.text.interactive-hover": "c8a99c70f54a8419191f543adc03ddcf51ef64a9",
+        "semantic.text.interactive-pressed": "721e1ead132eb9f6424347f6ca7f205f69b545db",
+        "semantic.text.accent": "68be0f856f48d55304667cd6fd4cc0b4fb8ce550",
+        "semantic.text.disabled": "4cbd42e4e764dde1fe60f98385c2d5cabe1e2be5",
+        "semantic.text.negative": "51999c528fe2d4612cd0c93de4ef1703148c5dcb",
+        "semantic.text.negative-hover": "651703574731c465b750532d5a400299ecd90d5f",
+        "semantic.text.negative-pressed": "40c07ec9485499e5130b51d548ae79ff29d06011",
+        "semantic.text.on-color": "5b74249e100864a8607eebfdcd59f8aaf34ef6ed",
+        "semantic.background.low": "33c4258ebae9fdec77f44685079c59c9585caf73",
+        "semantic.background.default": "477c11129d9604b6eba22916513347e63772b4ab",
+        "semantic.fill.primary-low": "bef435467d2c0fa16deada13bf6a6a591fc32aa4",
+        "semantic.fill.primary": "86211235e7a1760a2e3e6e4cd9614adc49e2d042",
+        "semantic.fill.primary-hover": "0d2951a15d33c3b01d954cc2dfc04f7c33f3bc27",
+        "semantic.fill.primary-pressed": "4cf1029e80cdbc56ddbe41356acceea9da1998fc",
+        "semantic.fill.silent": "47b30a9c4a84facf6b6dbb5509ff5e0b642feceb",
+        "semantic.fill.silent-hover": "1ccf3e73b8891b5715a4ce1bffab012e7f15d7d4",
+        "semantic.fill.silent-preseed": "94467cbda63d9ef41dc71d9a2a145a51e5fb7a5f",
+        "semantic.fill.interactive": "9b4ce62a8ec26c22945283c1204361e272bf61db",
+        "semantic.fill.interactive-hover": "53d943ab0e6b9a8b666051a000de655f7f4867ca",
+        "semantic.fill.interactive-pressed": "34672ce127664f42dd0c0dfc5b8fdfb3ba0b4805",
+        "semantic.fill.accent": "50753cbdf5e45e25ddfa5f2f05a5bdfa7bae0ed4",
+        "semantic.fill.disabled": "40de425b6a0a8fe38ab36c8a7f1d730465f73b33",
+        "semantic.fill.negative": "007343e6a9027087a8373f7ed37b717543ec5dd2",
+        "semantic.fill.negative-hover": "f6a52a021bd6bb84cd98364b838fe1905714c679",
+        "semantic.fill.negative-pressed": "6ec858997ea1402cd2a1e50aa923d3e1960b5c3f",
+        "semantic.border.divider-strong": "a653e6bf7588c7588eb8c6a198759b39b7c44683",
+        "semantic.border.divider": "5d6015c58ac69cef164193b1e4eba49cef30b51c",
+        "semantic.border.line": "3f514c6ba299d9d146ad58e611a73ef82a78a502",
+        "semantic.border.line-hover": "d326505848bc1c375610d62262f61082cec52c25",
+        "semantic.border.line-pressed": "8fbf278734dd5e999e027695235c2c24ae44034a",
+        "semantic.border.line-selected": "876f9c33cae361db858e5996d8cbbdaf65202aeb",
+        "semantic.border.line-negative": "edd40bf50950fc651bbb23f238e324a41d05250d",
+        "semantic.border.line-negative-hover": "a5cdc1ef6b2ba80229de25d82c1b1d13dbf311e1",
+        "semantic.border.line-negative-pressed": "3744a140340337ff82628f4d30877fa37ea6e9be",
+        "semantic.border.line-disabled": "4d4041ebebfac595349343e9f2f8b016344c3e0b",
+        "semantic.overlay.dimmed": "6e3a86fbaafa6278c90b7e30372d4075dee84914",
+        "dimension-25": "45e53f9b5bef80576d17053228334af00a73f7cf",
+        "dimension-50": "69083bd0e9239309be7dfe4a620c235e7381108e",
+        "dimension-100": "b8ef6b4815aa24d5ece5ce28b9b99c91626750ab",
+        "dimension-125": "776b9a45765175d61ed1b6b3a56f0526609c76d8",
+        "dimension-150": "36ffb3ed53b54f880451728231710a96438a414d",
+        "dimension-200": "c0f1e3262444719c20ca05f96432b6c232411f73",
+        "dimension-225": "235061a05c0b2fe82bd8fc42f04764b270f91971",
+        "dimension-250": "59af86aa7381e1d19b14baa722e411e94ad1a89b",
+        "dimension-300": "e3eaef8286e3e852f71eea41b48d67b91d08418b",
+        "dimension-350": "48edd0255b69d0c38e5bc04ea767e456ad82e537",
+        "dimension-375": "e8b990dce871e49e8f6eb39f87d2b4fb755cc9cf",
+        "dimension-400": "442a7361193ced26f1d1b33dc7ce78836152bbdb",
+        "dimension-500": "be1c277d7c754024741ecfa65690acccf46a9818",
+        "dimension-600": "46487130da5d797841ed1eda2a0a9b491428c555",
+        "dimension-700": "20366359109f954f1be299a3fdbbc355267ff457",
+        "dimension-750": "ef8ac6d675e6e15f33e000e5d8a2b6958fed1dc4",
+        "corner-radius-25": "d28fa3568ec65385dcd052083aa7788f744caa92",
+        "corner-radius-50": "566d4647586b5e9680f66e44d9b76811fed07114",
+        "corner-radius-100": "054be6045efea1c819b28b57eccb9d47e42aa033",
+        "corner-radius-full": "606fde92a62a45e938168b2bb5a5f60b4a32d6f6"
+      },
+      "group": "ruler"
+    },
+    {
+      "id": "c88600986f84777658e6e4ca838a7f165d78562c",
+      "name": "dark",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "semantic/color": "enabled",
+        "semantic/typography": "enabled",
+        "scale/color/dark": "enabled",
+        "scale/corner-radius": "enabled",
+        "scale/dimension-font-size": "enabled",
+        "scale/dimension-size": "enabled",
+        "scale/font-weight": "enabled",
+        "scale/letter-spacing": "enabled",
+        "scale/line-height": "enabled",
+        "static-scale/color": "enabled",
+        "static-scale/font-family": "enabled"
+      },
+      "group": "ruler",
+      "$figmaCollectionId": "VariableCollectionId:529:2721",
+      "$figmaModeId": "529:4",
+      "$figmaVariableReferences": {
+        "static.static-black": "c356e8cbc0b1b2abc88006602cb03b801eeb4db7",
+        "static.static-white": "f51fa6869a927a67a1ee8e5d5ae0615ee4598ab9",
+        "static.static-black-alpha-200": "6e3e596d13abdbb6ce445fcefbd8abbc76d79d5a",
+        "static.static-black-alpha-500": "aebb6c7aa224ea0f867e72dd6229491c94cdbc8b",
+        "static.static-black-alpha-900": "dd3e6c25b40d68edfcb3bf8b296f9cd88a8ca588",
+        "scale.gray-00": "c2924e140d5971780190a69d8a2739d3599eeb3f",
+        "scale.gray-100": "2501ed766828751b55092d44930afeec7a0f0081",
+        "scale.gray-200": "3f458dd17f7ed853b7b40813ad280c8e099038c0",
+        "scale.gray-300": "24a3ffc45c0268db79ef4f813e43bea4fdc3f385",
+        "scale.gray-400": "ddde5393667cfe790384eab7dcf887193d2a4692",
+        "scale.gray-500": "7cd1b71860be132f2c8a456e313922c4346d2aaf",
+        "scale.gray-600": "5d1eb2802d5527d275f8dc07f14bdf71a7dfe4dc",
+        "scale.gray-700": "8bddb98c1a84df0d503bfeaa55c5229de4a0f587",
+        "scale.gray-800": "339d8c41f78f031faf9104f1345f3a574e1ff56c",
+        "scale.gray-900": "3a77b37690f3d7362414cdaecaf0046856a122a8",
+        "scale.gray-950": "d2a07d591af8bc0920abae9832ecc35ac64efbd0",
+        "scale.red-100": "41fc8b15d25bdce8c9125e6bb412afa19f9be19a",
+        "scale.red-200": "38313fcb243e403a2cec989c1931531efd41e952",
+        "scale.red-300": "59e86cf543a5620e655e2559ec2b123dd7ccc68a",
+        "scale.red-400": "f8e2cc60608121a7046c2c17716c6b8f952856e5",
+        "scale.red-500": "39c03887705f02a8ccc3aa437be6419a11485a4c",
+        "scale.red-600": "db5207aff9d57338ca0c6be993a8eb1b0c50e7bb",
+        "scale.red-700": "d4aa434ff90acb61ddd35ab736af135600279516",
+        "scale.red-800": "97001faa6e44d623124142837b4e9c7c48c8e9d0",
+        "scale.red-900": "1fb472b1e593e3b031ff5d55e158406163021198",
+        "scale.red-950": "b8490bc4b431783157fb59999de4f21a034d79a3",
+        "scale.blue-100": "a2f56ed42b55d4d2cfab3b06ae37841f0877a028",
+        "scale.blue-200": "47aab4206228d46da201a9491d5a1e847d0aa717",
+        "scale.blue-300": "2ea25a2b238a57750a033627fe2bb7b29a1c321a",
+        "scale.blue-400": "961b451bac67b67e953eb75258494afd3e191201",
+        "scale.blue-500": "5d413ef4081d2c5d583af3cc267540373b1b2ffc",
+        "scale.blue-600": "7fa032718c2f3394c781ee3d788b2911610b9f27",
+        "scale.blue-700": "eba95fbac09536950b88346d31e5b1020d100d11",
+        "scale.blue-800": "41a6a0b788dfe69d79701f17a9566277d1a09b6f",
+        "scale.blue-900": "44b23035d204ff0c57846bfe5e9af0280df2e1db",
+        "scale.blue-950": "4bea0dbeeaca41cb26aecf87328ad22fdb9ed87b",
+        "scale.yellow-100": "f41478775594c251f1dce380e062bacdbd02c9c2",
+        "scale.yellow-200": "bcbdc37d85a22e77fd3f0a0f6ee0ee0670aa4d55",
+        "scale.yellow-300": "0b0275e994b23529d2497bbb284290fdd625903d",
+        "scale.yellow-400": "ff54c56fbcdf459bc4ebede516d94ca56e5cb393",
+        "scale.yellow-500": "243d789aaf09714c5b0835828e5e8de2e9e28bf0",
+        "scale.yellow-600": "2aea0be42510096ce900da93117a977409377d8e",
+        "scale.yellow-700": "e04af0ca8338862578c5a11d1d74fce1b269c5b2",
+        "scale.yellow-800": "25b6027673e2846ac5e4ae956b55fd940c3efb4a",
+        "scale.yellow-900": "e6e8de983da8037fe93486da8c36928c36619686",
+        "scale.yellow-950": "cb85b3505808d3108075663e8b9e6296bc9f401b",
+        "scale.green-100": "0b28f9f178f91fb79e40f6653b1234ae88fcb3b5",
+        "scale.green-200": "7c692579230d27d2752e4aea03e04a513536f56d",
+        "scale.green-300": "0a32f6368232fca39966d11e3689908b2664ef81",
+        "scale.green-400": "035fd2e4af772f88a1841d4e3265ec42e72c601f",
+        "scale.green-500": "ea5a2c22c06fc4ba14a5a21469dea3181a5529cf",
+        "scale.green-600": "590e2a2125ebbb55b1c60388df6e574fe25a79b6",
+        "scale.green-700": "a1306d891da8544ad25bee3a1d43ae8525b283cd",
+        "scale.green-800": "cf04d9aeae24a483675fc3780af84fc9f752305f",
+        "scale.green-900": "48c06dc5ea7af2cf7e101e2e66ef76d388dbddf0",
+        "scale.green-950": "b3126306bed19f1a87d5a9ead26701af09b242b8",
+        "semantic.text.primary": "772bd8dc582353fa2c18ba43109d09d553fa130d",
+        "semantic.text.primary-hover": "52f4bb91db1edb9c9ffc669e05f24a6c0801f5a7",
+        "semantic.text.primary-pressed": "d93a0ea4e13a338dbaed91ab78da11004d366603",
+        "semantic.text.secondary": "7b656fe35281e018e66f21ff58c35d7341f0ec7c",
+        "semantic.text.secondary-hover": "078c5a0616da2aa70608fb3108e04460cdc9db68",
+        "semantic.text.secondary-pressed": "f5c88c1fa254f7f318d29a8b9e332a0bf279c9a2",
+        "semantic.text.tertiary": "0389f14151330f6e343c735eb641fbd37e260210",
+        "semantic.text.interactive": "c11e2f45766f0f7ea84fff78f233bf0032659fca",
+        "semantic.text.interactive-hover": "c8a99c70f54a8419191f543adc03ddcf51ef64a9",
+        "semantic.text.interactive-pressed": "721e1ead132eb9f6424347f6ca7f205f69b545db",
+        "semantic.text.accent": "68be0f856f48d55304667cd6fd4cc0b4fb8ce550",
+        "semantic.text.disabled": "4cbd42e4e764dde1fe60f98385c2d5cabe1e2be5",
+        "semantic.text.negative": "51999c528fe2d4612cd0c93de4ef1703148c5dcb",
+        "semantic.text.negative-hover": "651703574731c465b750532d5a400299ecd90d5f",
+        "semantic.text.negative-pressed": "40c07ec9485499e5130b51d548ae79ff29d06011",
+        "semantic.text.on-color": "5b74249e100864a8607eebfdcd59f8aaf34ef6ed",
+        "semantic.background.low": "33c4258ebae9fdec77f44685079c59c9585caf73",
+        "semantic.background.default": "477c11129d9604b6eba22916513347e63772b4ab",
+        "semantic.fill.primary-low": "bef435467d2c0fa16deada13bf6a6a591fc32aa4",
+        "semantic.fill.primary": "86211235e7a1760a2e3e6e4cd9614adc49e2d042",
+        "semantic.fill.primary-hover": "0d2951a15d33c3b01d954cc2dfc04f7c33f3bc27",
+        "semantic.fill.primary-pressed": "4cf1029e80cdbc56ddbe41356acceea9da1998fc",
+        "semantic.fill.silent": "47b30a9c4a84facf6b6dbb5509ff5e0b642feceb",
+        "semantic.fill.silent-hover": "1ccf3e73b8891b5715a4ce1bffab012e7f15d7d4",
+        "semantic.fill.silent-preseed": "94467cbda63d9ef41dc71d9a2a145a51e5fb7a5f",
+        "semantic.fill.interactive": "9b4ce62a8ec26c22945283c1204361e272bf61db",
+        "semantic.fill.interactive-hover": "53d943ab0e6b9a8b666051a000de655f7f4867ca",
+        "semantic.fill.interactive-pressed": "34672ce127664f42dd0c0dfc5b8fdfb3ba0b4805",
+        "semantic.fill.accent": "50753cbdf5e45e25ddfa5f2f05a5bdfa7bae0ed4",
+        "semantic.fill.disabled": "40de425b6a0a8fe38ab36c8a7f1d730465f73b33",
+        "semantic.fill.negative": "007343e6a9027087a8373f7ed37b717543ec5dd2",
+        "semantic.fill.negative-hover": "f6a52a021bd6bb84cd98364b838fe1905714c679",
+        "semantic.fill.negative-pressed": "6ec858997ea1402cd2a1e50aa923d3e1960b5c3f",
+        "semantic.border.divider-strong": "a653e6bf7588c7588eb8c6a198759b39b7c44683",
+        "semantic.border.divider": "5d6015c58ac69cef164193b1e4eba49cef30b51c",
+        "semantic.border.line": "3f514c6ba299d9d146ad58e611a73ef82a78a502",
+        "semantic.border.line-hover": "d326505848bc1c375610d62262f61082cec52c25",
+        "semantic.border.line-pressed": "8fbf278734dd5e999e027695235c2c24ae44034a",
+        "semantic.border.line-selected": "876f9c33cae361db858e5996d8cbbdaf65202aeb",
+        "semantic.border.line-negative": "edd40bf50950fc651bbb23f238e324a41d05250d",
+        "semantic.border.line-negative-hover": "a5cdc1ef6b2ba80229de25d82c1b1d13dbf311e1",
+        "semantic.border.line-negative-pressed": "3744a140340337ff82628f4d30877fa37ea6e9be",
+        "semantic.border.line-disabled": "4d4041ebebfac595349343e9f2f8b016344c3e0b",
+        "semantic.overlay.dimmed": "6e3a86fbaafa6278c90b7e30372d4075dee84914",
+        "dimension-25": "45e53f9b5bef80576d17053228334af00a73f7cf",
+        "dimension-50": "69083bd0e9239309be7dfe4a620c235e7381108e",
+        "dimension-100": "b8ef6b4815aa24d5ece5ce28b9b99c91626750ab",
+        "dimension-125": "776b9a45765175d61ed1b6b3a56f0526609c76d8",
+        "dimension-150": "36ffb3ed53b54f880451728231710a96438a414d",
+        "dimension-200": "c0f1e3262444719c20ca05f96432b6c232411f73",
+        "dimension-225": "235061a05c0b2fe82bd8fc42f04764b270f91971",
+        "dimension-250": "59af86aa7381e1d19b14baa722e411e94ad1a89b",
+        "dimension-300": "e3eaef8286e3e852f71eea41b48d67b91d08418b",
+        "dimension-350": "48edd0255b69d0c38e5bc04ea767e456ad82e537",
+        "dimension-375": "e8b990dce871e49e8f6eb39f87d2b4fb755cc9cf",
+        "dimension-400": "442a7361193ced26f1d1b33dc7ce78836152bbdb",
+        "dimension-500": "be1c277d7c754024741ecfa65690acccf46a9818",
+        "dimension-600": "46487130da5d797841ed1eda2a0a9b491428c555",
+        "dimension-700": "20366359109f954f1be299a3fdbbc355267ff457",
+        "dimension-750": "ef8ac6d675e6e15f33e000e5d8a2b6958fed1dc4",
+        "corner-radius-25": "d28fa3568ec65385dcd052083aa7788f744caa92",
+        "corner-radius-50": "566d4647586b5e9680f66e44d9b76811fed07114",
+        "corner-radius-100": "054be6045efea1c819b28b57eccb9d47e42aa033",
+        "corner-radius-full": "606fde92a62a45e938168b2bb5a5f60b4a32d6f6"
+      }
+    }
+  ],
+  "$metadata": {
+    "tokenSetOrder": [
+      "semantic/color",
+      "semantic/typography",
+      "scale/color/light",
+      "scale/color/dark",
+      "scale/corner-radius",
+      "scale/dimension-font-size",
+      "scale/dimension-size",
+      "scale/font-weight",
+      "scale/letter-spacing",
+      "scale/line-height",
+      "static-scale/color",
+      "static-scale/font-family"
+    ]
+  }
+}
