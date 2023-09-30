@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.13",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tokens-studio/sd-transforms": "^0.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.0",
     "react-scripts": "5.0.1",
+    "style-dictionary": "^3.8.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "token:light": "npx token-transformer src/foundation/ds-tokens.json src/foundation/tokens/light.json scale/color/light",
+    "token:dark": "npx token-transformer src/foundation/ds-tokens.json src/foundation/tokens/dark.json scale/color/dark",
+    "token:semantic": "npx token-transformer src/foundation/ds-tokens.json src/foundation/tokens/semantic.json semantic/color",
+    "token:scale": "npx token-transformer src/foundation/ds-tokens.json src/foundation/tokens/scale.json scale/dimension-font-size",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
