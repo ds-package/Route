@@ -19,6 +19,10 @@ img {
     font-weight: var(--regular);
 }
 
+.weight-medium {
+    font-weight: var(--medium);
+}
+
 .weight-bold {
     font-weight: var(--bold);
 }

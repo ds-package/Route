@@ -1,0 +1,10 @@
+.header {
+    width: 100%;
+    margin-top: 32px;
+
+}
+
+.container p {
+    font-size: var(--scale-dimension-font-size-300);
+    font-weight: var(--regular);
+}
