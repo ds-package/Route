@@ -14,5 +14,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--semantic-surface);
-  color: var(--color-blue-700);
+  color: var(--semantic-on-surface);
 }
