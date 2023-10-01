@@ -1,12 +1,9 @@
 ---
-title: sideProject
-author: dsPack
-date: 2023.10.01
-category: side
-note: the Dawn Theme enhances your writing experience with subtle, yet impactful, modifications.
+title: Project Title
+author: Author Name
+date: 2023-10-01
+category: Project Category
 ---
-
-<img src="https://i.imgur.com/oD8VVtW.png" title="source: imgur.com" />
 
 Markdawn TEST
 

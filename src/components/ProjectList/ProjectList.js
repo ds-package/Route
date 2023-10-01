@@ -1,51 +1,99 @@
 import React, { useState, useEffect } from 'react';
+import { Link, BrowserRouter } from 'react-router-dom';  // Import Link from react-router-dom
 
-const getProjectNames = () => {
-  const projectContext = require.context('../../projects', true, /\.en.md$/);
-  return projectContext.keys().map((key) => {
-    const projectName = key.match(/^\.\/(.+)\/.+/)[1];  // Extract project name from the path
-    return projectName;
-  });
+const getProjectData = async (project, lang) => {
+  const markdownResponse = await fetch(`../projects/${project}/${project}.${lang}.md`);
+  const markdownContent = await markdownResponse.text();
+
+  // Use parseMetadata to extract metadata
+  const metadata = parseMetadata(markdownContent);
+
+  return { project, content: markdownContent, metadata };
+};
+
+const parseMetadata = (markdownContent) => {
+  const metadata = {};
+  const metadataPattern = /^---\s*([\s\S]*?)\s*---/;
+  const matches = metadataPattern.exec(markdownContent);
+
+  if (matches && matches[1]) {
+    const metadataLines = matches[1].split('\n');
+    metadataLines.forEach((line) => {
+      const [key, ...values] = line.split(':').map((item) => item.trim());
+      metadata[key.toLowerCase()] = values.join(':').trim();
+    });
+  }
+  return metadata;
 };
 
 
 const ProjectList = () => {
   const [projects, setProjects] = useState([]);
-  const [selectedLanguage] = useState('en');  // 초기 언어는 한국어로 설정
-
+  const [selectedLanguage] = useState('en');
 
   useEffect(() => {
-    // 가상의 프로젝트 데이터
     const projectNames = getProjectNames();
-    setProjects(projectNames);
+    const projectDataPromises = projectNames.map((project) => {
+      const enProject = getProjectData(project, 'en');
+      const krProject = getProjectData(project, 'kr');
+      return Promise.all([enProject, krProject]);
+    });
 
+    Promise.all(projectDataPromises)
+      .then((data) => {
+        const projectList = data.map(([enProject, krProject]) => {
+          return {
+            project: enProject.project,
+            enContent: enProject.content,
+            krContent: krProject.content,
+            enMetadata: enProject.metadata,
+            krMetadata: krProject.metadata
+          };
+        });
+        // Sort projects by date in descending order
+        projectList.sort((a, b) => new Date(b.enMetadata.date) - new Date(a.enMetadata.date));
+        setProjects(projectList);
+      })
+      .catch((error) => {
+        console.error('Error fetching project data:', error);
+      });
   }, []);
 
+  const getProjectNames = () => {
+    const projectContext = require.context('../../projects', true, /\.en.md$/);
+    return projectContext.keys().map((key) => {
+      const projectName = key.match(/^\.\/(.+)\/.+/)[1];
+      return projectName;
+    });
+  };
+
   return (
-    <div>
-      <h1>프로젝트 목록</h1>
-      <ul>
-        {projects.map((project) => (
-          <li key={project}>
-            <h2>{project}</h2>
-            {selectedLanguage === 'en' ? (
-              <div dangerouslySetInnerHTML={{ __html: project.enContent }} />
-            ) : (
-              <div dangerouslySetInnerHTML={{ __html: project.krContent }} />
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <BrowserRouter>
+      <div>
+        <h1>프로젝트 목록</h1>
+        <ul>
+          {projects.map((projectData) => (
+            <li key={projectData.project}>
+              <h2>{projectData.project}</h2>
+              <div>
+                <strong>Date: {selectedLanguage === 'en' ? projectData.enMetadata.date : projectData.krMetadata.date}</strong>
+              </div>
+              <div>
+                <strong>Category: {selectedLanguage === 'en' ? projectData.enMetadata.category : projectData.krMetadata.category}</strong>
+              </div>
+              <Link to={`/projects/${projectData.project}`}> 바로가기</Link>
+              {/* Render content based on language selection */}
+              {selectedLanguage === 'en' ? (
+                <div dangerouslySetInnerHTML={{ __html: projectData.enContent }} />
+              ) : (
+                <div dangerouslySetInnerHTML={{ __html: projectData.krContent }} />
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </BrowserRouter>
   );
 };
 
 export default ProjectList;
-
-
-  
-  
-
-// 아래글이 답일 수 있음
-//https://www.npmjs.com/package/markdown-to-jsx 리액트 마크다운 공식문서 
-//https://github.com/likesan/3rd-blog-netlify/blob/master/src/posts/2019-09-30-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%82%98%ED%83%80%EB%82%B4%EB%B3%B4%EC%9E%90.md
