@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
+import { LanguageContext } from "../hooks/useLangs";
+import Navigation from "../Navigation/Navigation";
 import styles from "./Header.module.css";
 import Logo from "../Logo/Logo";
-import { LanguageContext } from "../hooks/useLangs";
 
 const Header = () => {
   const { language } = useContext(LanguageContext);
@@ -31,6 +32,7 @@ const Header = () => {
         <Logo />
         {paragraphText}
         <p>&copy;{new Date().getFullYear()} NoName</p>
+        <Navigation />
       </div>
     </header>
   );

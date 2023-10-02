@@ -3,15 +3,14 @@ import { LanguageProvider } from "./components/hooks/useLangs";
 import Header from "./components/Header/Header";
 import Layout from "./pages/Layout/Layout";
 import Controller from "./components/Controller/Controller";
-
-import ProjectListItem from "./components/ProjectListItem/ProjectListItem";
+import ProjectList from "./components/ProjectList/ProjectList";
 
 function App() {
   return (
     <LanguageProvider>
       <Layout>
         <Header />
-        <ProjectListItem />
+        <ProjectList />
         <Controller />
       </Layout>
     </LanguageProvider>
