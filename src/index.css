@@ -15,3 +15,13 @@ body {
   background-color: var(--semantic-surface);
   color: var(--semantic-on-surface);
 }
+
+
+/* Option : theme 변환시에 색상이 자연스럽게 변환되는 애니메이션  */
+.theme-transition,
+.theme-transition *,
+.theme-transition *:before,
+.theme-transition *:after {
+  transition-property: top, background-color, border-bottom, border-top;
+  transition-duration: 0.5s;
+}

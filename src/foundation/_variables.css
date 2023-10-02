@@ -54,6 +54,7 @@
     --bold: 700;
     --medium: 500;
     --regular: 400;
+    --scale-radius-full: 9999px;
     --scale-radius-6: var(--scale-dimension-size-300);
     --scale-radius-5: var(--scale-dimension-size-200);
     --scale-radius-4: var(--scale-dimension-size-150);

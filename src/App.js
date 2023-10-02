@@ -1,14 +1,20 @@
-import Header from './components/Header/Header';
-import ProjectList from './components/ProjectList/ProjectList';
-import Layout from './pages/Layout/Layout';
+import React from "react";
+import { LanguageProvider } from "./components/hooks/useLangs";
+import Header from "./components/Header/Header";
+import Layout from "./pages/Layout/Layout";
+import Controller from "./components/Controller/Controller";
 
+import ProjectListItem from "./components/ProjectListItem/ProjectListItem";
 
 function App() {
   return (
-    <Layout>
-      <Header />
-      <ProjectList />
-    </Layout>
+    <LanguageProvider>
+      <Layout>
+        <Header />
+        <ProjectListItem />
+        <Controller />
+      </Layout>
+    </LanguageProvider>
   );
 }
 

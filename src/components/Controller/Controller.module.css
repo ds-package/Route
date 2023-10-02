@@ -1,0 +1,25 @@
+.control {
+    display: flex;
+    position: absolute;
+    bottom: var(--scale-dimension-size-300);
+    right: var(--scale-dimension-size-300);
+
+}
+
+.control button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    height: var(--scale-dimension-size-600);  
+    border-radius: var(--scale-radius-full);
+    width:var(--scale-dimension-size-600); 
+}
+
+.controlLang{
+    margin-right: var(--scale-dimension-size-150);
+}
+.controlTheme {
+   
+}
