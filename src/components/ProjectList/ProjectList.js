@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../hooks/useLangs"; // useLangs에서 LanguageContext를 가져옴
 import styles from "./ProjectList.module.css"; // CSS 모듈을 가져옴
+import { Link } from "react-router-dom";
 
 const ProjectList = () => {
   const { language } = useContext(LanguageContext); // useContext를 통해 LanguageContext에서 language 값을 가져옴
@@ -33,7 +34,7 @@ const ProjectList = () => {
       try {
         // 프로젝트 파일들을 비동기적으로 가져와서 배열로 반환
         const fetchedProjects = await Promise.all(
-          markdownFiles.map(async (file) => {
+          markdownFiles.map(async (file, idx) => {
             const filePath = markdownFilesPath(file);
             const response = await fetch(filePath);
             const projectContent = await response.text();
@@ -51,6 +52,7 @@ const ProjectList = () => {
               projectContent.match(/description:\s+(.*)/i);
 
             return {
+              id: idx,
               title: projectTitle ? projectTitle[1] : "",
               date: projectDate,
               image: projectImage ? projectImage[1] : "",
@@ -76,13 +78,15 @@ const ProjectList = () => {
     fetchData();
   }, [language]);
 
+  // 프로젝트를 클릭했을 때 해당 프로젝트 페이지로 이동
+
   return (
     <div>
       <section className="hero">... title stuff</section>
       <section className="section">
         <div className={`container ${styles.projects}`}>
           {projects.map((project, idx) => (
-            <div className="card" key={idx}>
+            <Link to={`/${language}/${project.id}`} className="card" key={idx}>
               <div className="card-content">
                 <div className="content">
                   {/* 프로젝트 정보 렌더링 */}
@@ -91,13 +95,14 @@ const ProjectList = () => {
                   ) : (
                     <p>No date available</p>
                   )}
+
                   <h3>{project.title}</h3>
                   <img src={project.image} alt={project.imageAlt} />
                   <p>Category: {project.category}</p>
                   <p>{project.description}</p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

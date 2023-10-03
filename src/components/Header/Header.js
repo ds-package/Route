@@ -3,6 +3,7 @@ import { LanguageContext } from "../hooks/useLangs";
 import Navigation from "../Navigation/Navigation";
 import styles from "./Header.module.css";
 import Logo from "../Logo/Logo";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { language } = useContext(LanguageContext);
@@ -29,7 +30,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
+
         {paragraphText}
         <p>&copy;{new Date().getFullYear()} NoName</p>
         <Navigation />

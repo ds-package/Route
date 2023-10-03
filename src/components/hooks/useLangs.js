@@ -7,8 +7,6 @@ const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("ko");
 
   const toggleLanguage = () => {
-    // setLanguage((prevLanguage) => (prevLanguage === "ko" ? "en" : "ko"));
-    // document.documentElement.lang = language === "ko" ? "en" : "ko";
     const newLanguage = language === "ko" ? "en" : "ko";
     setLanguage(newLanguage);
     document.documentElement.lang = newLanguage; // Update HTML lang attribute
