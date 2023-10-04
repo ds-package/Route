@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../hooks/useLangs";
 import { Link } from "react-router-dom";
-import styles from "./ProjectList.module.css";
 import fetchProjectData from "../../utils/fetchProjectData";
+import Logo from "../Logo/Logo";
 
-const ProjectList = () => {
+const ProjectNavi = () => {
   const { language } = useContext(LanguageContext); // useContext를 통해 LanguageContext에서 language 값을 가져옴
   const [projects, setProjects] = useState([]); // 프로젝트 목록을 관리할 상태와 해당 상태를 업데이트할 함수를 선언
 
@@ -27,23 +27,16 @@ const ProjectList = () => {
 
   return (
     <div>
-      <section className="hero">... title stuff</section>
+      <Link to="/">
+        <Logo />
+      </Link>
       <section className="section">
-        <div className={`container ${styles.projects}`}>
+        <div>
           {projects.map((project, idx) => (
             <Link to={`/${language}/${project.id}`} className="card" key={idx}>
               <div className="card-content">
                 <div className="content">
-                  {project.date ? (
-                    <p>Date: {project.date.toLocaleDateString()}</p>
-                  ) : (
-                    <p>No date available</p>
-                  )}
-
-                  <h3>{project.title}</h3>
-                  <img src={project.image} alt={project.imageAlt} />
-                  <p>Category: {project.category}</p>
-                  <p>{project.description}</p>
+                  <p>{project.title}</p>
                 </div>
               </div>
             </Link>
@@ -54,4 +47,4 @@ const ProjectList = () => {
   );
 };
 
-export default ProjectList;
+export default ProjectNavi;

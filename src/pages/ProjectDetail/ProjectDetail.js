@@ -1,8 +1,13 @@
-// ProjectDetail.js
-
-import { LanguageContext } from "../../components/hooks/useLangs";
 import React, { useContext, useEffect, useState } from "react";
+import { LanguageContext } from "../../components/hooks/useLangs";
 import { useParams } from "react-router-dom";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
+import fetchProjectData from "../../utils/fetchProjectData";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+import ProjectNavi from "../../components/ProjectNavi/ProjectNavi";
 
 const ProjectDetail = () => {
   const { language } = useContext(LanguageContext);
@@ -12,48 +17,18 @@ const ProjectDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let markdownFilesPath;
-
-        if (language === "en") {
-          markdownFilesPath = require.context(
-            "../../projects/en",
-            false,
-            /\.md$/
-          );
-        } else if (language === "ko") {
-          markdownFilesPath = require.context(
-            "../../projects/ko",
-            false,
-            /\.md$/
-          );
-        } else {
-          console.error("Unsupported language:", language);
-          return;
-        }
-
-        const markdownFiles = markdownFilesPath.keys();
+        const projects = await fetchProjectData(language);
 
         // Find the project by matching id
-        const selectedProject = markdownFiles
-          .map((file, idx) => {
-            const filePath = markdownFilesPath(file);
-            return {
-              id: idx,
-              filePath,
-            };
-          })
-          .find((project) => project.id.toString() === projectId);
+        const selectedProject = projects.find(
+          (project) => project.id.toString() === projectId
+        );
 
         if (selectedProject) {
-          const response = await fetch(selectedProject.filePath);
-          const projectContent = await response.text();
-
-          const projectTitle = projectContent.match(/title:\s+(.*)/i);
-
           setProject({
             id: selectedProject.id,
-            title: projectTitle ? projectTitle[1] : "",
-            content: projectContent,
+            title: selectedProject.title,
+            content: selectedProject.content,
           });
         } else {
           console.error("Project not found.");
@@ -72,8 +47,41 @@ const ProjectDetail = () => {
 
   return (
     <div>
-      <h1>{project.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: project.content }} />
+      <ProjectNavi />
+      <h3>{project.title}</h3>
+      <Markdown
+        children={project.content}
+        rehypePlugins={[rehypeRaw]}
+        remarkPlugins={[remarkGfm]}
+        components={{
+          code(props) {
+            const { children, className, node, ...rest } = props;
+            const match = /language-(\w+)/.exec(className || "");
+            return match ? (
+              <div className="code-block">
+                <div className="code-block-title">
+                  <p className="ui-font">Example</p>
+                </div>
+                <SyntaxHighlighter
+                  children={String(children).replace(/\n$/, "")}
+                  style={dracula}
+                  customStyle={{
+                    padding: "24px",
+                  }}
+                  wrapLongLines={true}
+                  language={match[1]}
+                  PreTag="div"
+                  {...props}
+                />
+              </div>
+            ) : (
+              <code {...rest} className={className}>
+                {children}
+              </code>
+            );
+          },
+        }}
+      />
     </div>
   );
 };
