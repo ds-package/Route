@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../hooks/useLangs";
+import { Link } from "react-router-dom";
+import { HouseSimple } from "@phosphor-icons/react";
 import Navigation from "../Navigation/Navigation";
 import styles from "./Header.module.css";
-import Logo from "../Logo/Logo";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const { language } = useContext(LanguageContext);
@@ -30,12 +30,12 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Link to="/">
-        <Logo />
+        <HouseSimple size={24} weight="fill" />
       </Link>
       <div className={styles.container}>
-        <div className={styles.intro}>{paragraphText}</div>
-        <Navigation />
+        <div className={styles.paragraphText}>{paragraphText}</div>
       </div>
+      <Navigation />
     </header>
   );
 };

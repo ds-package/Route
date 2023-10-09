@@ -1,0 +1,15 @@
+.navigation {
+    margin-top: 32px;
+    margin-bottom: 32px;
+} 
+
+.prjTitle {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.prjTitle span {
+    color: var(--color-gray-500);
+    font-size: 14px;
+}
+

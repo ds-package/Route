@@ -3,6 +3,9 @@ import { LanguageContext } from "../../components/hooks/useLangs";
 import { useParams } from "react-router-dom";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { HouseSimple } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
+import styles from "./ProjectDetail.module.css";
 import fetchProjectData from "../../utils/fetchProjectData";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -29,6 +32,9 @@ const ProjectDetail = () => {
             id: selectedProject.id,
             title: selectedProject.title,
             content: selectedProject.content,
+            date: selectedProject.date,
+            category: selectedProject.category,
+            year: selectedProject.year,
           });
         } else {
           console.error("Project not found.");
@@ -46,42 +52,56 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div>
-      <ProjectNavi />
-      <h3>{project.title}</h3>
-      <Markdown
-        children={project.content}
-        rehypePlugins={[rehypeRaw]}
-        remarkPlugins={[remarkGfm]}
-        components={{
-          code(props) {
-            const { children, className, node, ...rest } = props;
-            const match = /language-(\w+)/.exec(className || "");
-            return match ? (
-              <div className="code-block">
-                <div className="code-block-title">
-                  <p className="ui-font">Example</p>
+    <div className={styles.test}>
+      <div className={styles.navigation}>
+        <Link to="/">
+          <HouseSimple size={24} weight="fill" />
+        </Link>
+      </div>
+
+      <div>
+        <div className={styles.prjTitle}>
+          <h3>{project.title}</h3>
+          <span>
+            {project.year} &nbsp;
+            <Markdown children={project.category} />
+          </span>
+        </div>
+        <Markdown
+          children={project.content}
+          rehypePlugins={[rehypeRaw]}
+          remarkPlugins={[remarkGfm]}
+          components={{
+            code(props) {
+              const { children, className, node, ...rest } = props;
+              const match = /language-(\w+)/.exec(className || "");
+              return match ? (
+                <div className="code-block">
+                  <div className="code-block-title">
+                    <p className="ui-font">Example</p>
+                  </div>
+                  <SyntaxHighlighter
+                    children={String(children).replace(/\n$/, "")}
+                    style={dracula}
+                    customStyle={{
+                      padding: "16px",
+                    }}
+                    wrapLongLines={true}
+                    language={match[1]}
+                    PreTag="div"
+                    {...props}
+                  />
                 </div>
-                <SyntaxHighlighter
-                  children={String(children).replace(/\n$/, "")}
-                  style={dracula}
-                  customStyle={{
-                    padding: "24px",
-                  }}
-                  wrapLongLines={true}
-                  language={match[1]}
-                  PreTag="div"
-                  {...props}
-                />
-              </div>
-            ) : (
-              <code {...rest} className={className}>
-                {children}
-              </code>
-            );
-          },
-        }}
-      />
+              ) : (
+                <code {...rest} className={className}>
+                  {children}
+                </code>
+              );
+            },
+          }}
+        />
+        <ProjectNavi />
+      </div>
     </div>
   );
 };

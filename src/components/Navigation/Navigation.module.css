@@ -1,0 +1,15 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    font-size: var(--scale-dimension-font-size-100);
+    color: var(--color-gray-600);
+}
+
+.navigation a {
+    color: var(--color-gray-600);
+}
+
+
+.link {
+    margin-right: var(--scale-dimension-size-100);
+}

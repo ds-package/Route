@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../hooks/useLangs";
 import { Link } from "react-router-dom";
 import fetchProjectData from "../../utils/fetchProjectData";
-import Logo from "../Logo/Logo";
+import styles from "./ProjectNavi.module.css";
 
 const ProjectNavi = () => {
   const { language } = useContext(LanguageContext); // useContext를 통해 LanguageContext에서 language 값을 가져옴
@@ -26,18 +26,13 @@ const ProjectNavi = () => {
   // 프로젝트를 클릭했을 때 해당 프로젝트 페이지로 이동
 
   return (
-    <div>
-      <Link to="/">
-        <Logo />
-      </Link>
+    <div className={styles.test}>
       <section className="section">
         <div>
           {projects.map((project, idx) => (
             <Link to={`/${language}/${project.id}`} className="card" key={idx}>
               <div className="card-content">
-                <div className="content">
-                  <p>{project.title}</p>
-                </div>
+                <div className="content">{project.title}</div>
               </div>
             </Link>
           ))}

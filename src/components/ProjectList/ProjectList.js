@@ -3,6 +3,7 @@ import { LanguageContext } from "../hooks/useLangs";
 import { Link } from "react-router-dom";
 import styles from "./ProjectList.module.css";
 import fetchProjectData from "../../utils/fetchProjectData";
+import Markdown from "react-markdown";
 
 const ProjectList = () => {
   const { language } = useContext(LanguageContext); // useContext를 통해 LanguageContext에서 language 값을 가져옴
@@ -27,32 +28,31 @@ const ProjectList = () => {
 
   return (
     <div>
-      <section className="hero">projects</section>
       <section className="section">
         <div className={`container ${styles.projects}`}>
           {projects.map((project, idx) => (
-            <Link
-              to={`/${language}/${project.id}`}
-              className={styles.list}
-              key={idx}
-            >
-              <div className={styles.listContents}>
-                <div className={styles.contents}>
-                  <div className={styles.info}>
-                    <p>{project.category}</p>
+            <Link to={`/${language}/${project.id}`} className="links" key={idx}>
+              <div className={styles.prjList}>
+                <div className={styles.prjContents}>
+                  <div className={styles.prjInfo}>
                     <h6>{project.title}</h6>
-                    <p>{project.description}</p>
-
+                    <div className={styles.projInfoText}>
+                      {project.description}
+                    </div>
                     {project.date ? (
-                      <p>{project.date.toLocaleDateString()}</p>
+                      <div className={styles.prjInfoItem}>
+                        {project.year} ·&nbsp;
+                        <Markdown children={project.category} />
+                      </div>
                     ) : (
-                      <p>No date available</p>
+                      <div className={styles.prjInfoItem}>
+                        No date available · {project.category}
+                      </div>
                     )}
                   </div>
-
-                  <span className={styles.imageContainer}>
+                  <span className={styles.prjImageWrap}>
                     <img
-                      className={styles.projectLsitImage}
+                      className={styles.prjImage}
                       src={project.image}
                       alt={project.imageAlt}
                     />

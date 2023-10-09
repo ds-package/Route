@@ -34,6 +34,7 @@ const fetchProjectData = async (language) => {
         const projectDate = projectDateMatch
           ? new Date(projectDateMatch[1])
           : null;
+        const projectYear = projectContent.match(/year:\s+(.*)/i);
         const projectImage = projectContent.match(/image:\s+(.*)/i);
         const projectAlt = projectContent.match(/imageAlt:\s+(.*)/i);
         const projectCategory = projectContent.match(/category:\s+(.*)/i);
@@ -44,6 +45,7 @@ const fetchProjectData = async (language) => {
           id: idx,
           title: projectTitle ? projectTitle[1] : "",
           date: projectDate,
+          year: projectYear ? projectYear[1] : "",
           image: projectImage ? projectImage[1] : "",
           imageAlt: projectAlt ? projectAlt[1] : "",
           category: projectCategory ? projectCategory[1] : "",

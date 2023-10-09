@@ -1,9 +1,8 @@
 .control {
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: var(--scale-dimension-size-300);
-    right: var(--scale-dimension-size-300);
-
+    right:var(--scale-dimension-size-300);
 }
 
 .control button {
@@ -12,7 +11,8 @@
     justify-content: center;
     text-align: center;
     cursor: pointer;
-    height: var(--scale-dimension-size-600);  
+    height: var(--scale-dimension-size-600); 
+    border: 0px; 
     border-radius: var(--scale-radius-full);
     width:var(--scale-dimension-size-600); 
 }

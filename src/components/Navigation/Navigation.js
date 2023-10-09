@@ -4,11 +4,14 @@ import styles from "./Navigation.module.css";
 
 const Navigation = () => {
   return (
-    <div className={styles.links}>
-      <Link to="/about">
-        <li>About</li>
+    <div className={styles.navigation}>
+      <Link to="/about" className={styles.link}>
+        About
       </Link>
-      <li>Blog</li>
+      <div className={styles.link}>·</div>
+      <Link to="https://ds-package.github.io/Record/#/" target="_blank">
+        Blog
+      </Link>
     </div>
   );
 };

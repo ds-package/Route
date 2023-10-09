@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   margin-top: 32px;
-  width: 100%;
+  margin-bottom: 32px;
 }
 
 .container{ 
@@ -11,11 +11,13 @@
   width: 100%;
 }
 
-.intro {
+.paragraphText {
   width: 80%;
+  word-break: keep-all;
+  margin-bottom: 16px;
 }
 
-.intro h6 {
+.paragraphText h6 {
   font-weight: var(--regular);
   line-height: var(--static-medium);
 }

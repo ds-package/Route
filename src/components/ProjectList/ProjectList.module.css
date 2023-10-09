@@ -1,38 +1,53 @@
-
 .projects {
     border-top: 1px solid var(--semantic-border-divider);
+    margin-bottom:var(--scale-dimension-size-300);
 }
 
-
-
-.listContents {
-    /* background-color: var(--color-red-200); */
+.prjList {
     width: 100%;
-   
 }
 
-.contents{ 
-    /* background-color: var(--color-red-300); */
+.prjContents {
     width: 100%;
     height: 120px;
     display: flex;
     justify-content: space-between;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: var( --scale-dimension-size-150);
+    padding-bottom: var( --scale-dimension-size-150);
     border-bottom: 1px solid var(--semantic-border-divider);
     align-items: center;
-}   
-
-.info {
-    width: 100%;
-    margin-right: 24px;
 }
 
-.imageContainer{
+
+.prjInfo {
+    width: 100%;
+    margin-right: var(--scale-dimension-size-700);
+}
+.prjInfo h6 {
+    margin-bottom: var(--scale-dimension-size-75);
+}
+.projInfoText {
+    margin-bottom: var(--scale-dimension-size-75);
+    line-height: var(--static-small);
+}
+
+.prjInfoItem {
+    font-size: var(--scale-dimension-font-size-100);
+    color: var(--color-gray-600);
+    display: flex;
+    align-items: center;
+}
+
+.prjInfoItem p {
+    margin: 0;
+}
+
+
+.prjImageWrap{
     box-sizing: border-box;
     display: block;
     overflow: hidden;
-    width: 240px;
+    width: var(--scale-dimension-size-3000);
     height: 100%;
     background: none;
     opacity: 1;
@@ -42,7 +57,7 @@
     inset: 0px;
 }
 
-.projectLsitImage {
+.prjImage {
     box-sizing: border-box;
     padding: 0px;
     border: none;
