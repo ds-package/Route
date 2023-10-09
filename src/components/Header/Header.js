@@ -11,31 +11,29 @@ const Header = () => {
 
   if (language === "en") {
     paragraphText = (
-      <p>
+      <h6>
         Working as a design system product designer in Korea. Spending most of
         my time pondering on processes that can enhance the productivity of
         makers. I enjoy digital tools that can help with this.
-      </p>
+      </h6>
     );
   } else {
     paragraphText = (
-      <p>
+      <h6>
         한국에서 디자인 시스템 프로덕트 디자이너로 일하고 있습니다. 대부분의
         시간을 메이커의 생산성을 높일 수 있는 프로세스에 대한 고민으로 보냅니다.
         그리고 이를 도와줄 수 있는 디지털 도구들을 좋아합니다.
-      </p>
+      </h6>
     );
   }
 
   return (
     <header className={styles.header}>
+      <Link to="/">
+        <Logo />
+      </Link>
       <div className={styles.container}>
-        <Link to="/">
-          <Logo />
-        </Link>
-
-        {paragraphText}
-        <p>&copy;{new Date().getFullYear()} NoName</p>
+        <div className={styles.intro}>{paragraphText}</div>
         <Navigation />
       </div>
     </header>

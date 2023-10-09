@@ -103,5 +103,5 @@
     --semantic-surface-contents: #dfddd3;
     --semantic-on-surface: #15171a;
     --semantic-border-thumbnail: rgba(0, 0, 0, 0.03);
-    --semantic-border-divider: #eceae5;
+    --semantic-border-divider: var(--color-ash-400);
 }

@@ -97,11 +97,11 @@
     --semantic-positive: #40c057;
     --semantic-positive-low: rgba(64, 192, 87, 0.1);
     --semantic-disabled: #495057;
-    --semantic-disabled-low: #212529;
+    --semantic-disabled-low: var(--color-gray-200);
     --semantic-surface-low: #000000;
     --semantic-surface: #15171a;
-    --semantic-surface-contents: #212529;
+    --semantic-surface-contents: var(--color-gray-200);
     --semantic-on-surface: #f8f9fa;
     --semantic-border-thumbnail: rgba(255, 255, 255, 0.03);
-    --semantic-border-divider: #212529;
+    --semantic-border-divider: var(--color-gray-200);
 }

@@ -27,23 +27,36 @@ const ProjectList = () => {
 
   return (
     <div>
-      <section className="hero">... title stuff</section>
+      <section className="hero">projects</section>
       <section className="section">
         <div className={`container ${styles.projects}`}>
           {projects.map((project, idx) => (
-            <Link to={`/${language}/${project.id}`} className="card" key={idx}>
-              <div className="card-content">
-                <div className="content">
-                  {project.date ? (
-                    <p>Date: {project.date.toLocaleDateString()}</p>
-                  ) : (
-                    <p>No date available</p>
-                  )}
+            <Link
+              to={`/${language}/${project.id}`}
+              className={styles.list}
+              key={idx}
+            >
+              <div className={styles.listContents}>
+                <div className={styles.contents}>
+                  <div className={styles.info}>
+                    <p>{project.category}</p>
+                    <h6>{project.title}</h6>
+                    <p>{project.description}</p>
 
-                  <h3>{project.title}</h3>
-                  <img src={project.image} alt={project.imageAlt} />
-                  <p>Category: {project.category}</p>
-                  <p>{project.description}</p>
+                    {project.date ? (
+                      <p>{project.date.toLocaleDateString()}</p>
+                    ) : (
+                      <p>No date available</p>
+                    )}
+                  </div>
+
+                  <span className={styles.imageContainer}>
+                    <img
+                      className={styles.projectLsitImage}
+                      src={project.image}
+                      alt={project.imageAlt}
+                    />
+                  </span>
                 </div>
               </div>
             </Link>
