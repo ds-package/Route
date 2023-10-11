@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { LanguageContext } from "../hooks/useLangs";
 import { Link } from "react-router-dom";
 import { HouseSimple } from "@phosphor-icons/react";
-import Navigation from "../Navigation/Navigation";
+import Menu from "../Menu/Menu";
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -35,7 +35,7 @@ const Header = () => {
       <div className={styles.container}>
         <div className={styles.paragraphText}>{paragraphText}</div>
       </div>
-      <Navigation />
+      <Menu />
     </header>
   );
 };

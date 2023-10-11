@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Navigation.module.css";
+import styles from "./Menu.module.css";
 
-const Navigation = () => {
+const Menu = () => {
   return (
-    <div className={styles.navigation}>
+    <div className={styles.menu}>
       <Link to="/about" className={styles.link}>
         About
       </Link>
@@ -16,4 +16,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Menu;

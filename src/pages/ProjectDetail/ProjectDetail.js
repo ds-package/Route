@@ -3,8 +3,7 @@ import { LanguageContext } from "../../components/hooks/useLangs";
 import { useParams } from "react-router-dom";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { HouseSimple } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Topbar from "../../components/Topbar/Topbar";
 import styles from "./ProjectDetail.module.css";
 import fetchProjectData from "../../utils/fetchProjectData";
 import Markdown from "react-markdown";
@@ -48,22 +47,21 @@ const ProjectDetail = () => {
   }, [projectId, language]);
 
   if (!project) {
-    return <div>Loading...</div>;
+    return (
+      <div className={styles.loadingScreen}>
+        <Topbar />
+      </div>
+    );
   }
 
   return (
     <div className={styles.test}>
-      <div className={styles.navigation}>
-        <Link to="/">
-          <HouseSimple size={24} weight="fill" />
-        </Link>
-      </div>
-
+      <Topbar />
       <div>
         <div className={styles.prjTitle}>
           <h3>{project.title}</h3>
           <span>
-            {project.year} &nbsp;
+            {project.year} ·&nbsp;
             <Markdown children={project.category} />
           </span>
         </div>

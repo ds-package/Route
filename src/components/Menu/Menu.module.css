@@ -1,11 +1,11 @@
-.navigation {
+.menu {
     display: flex;
     align-items: center;
     font-size: var(--scale-dimension-font-size-100);
     color: var(--color-gray-600);
 }
 
-.navigation a {
+.menu a {
     color: var(--color-gray-600);
 }
 

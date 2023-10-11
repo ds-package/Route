@@ -10,16 +10,17 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    cursor: pointer;
+
     height: var(--scale-dimension-size-600); 
-    border: 0px; 
-    border-radius: var(--scale-radius-full);
     width:var(--scale-dimension-size-600); 
+    border: var( --scale-dimension-size-0); 
+    border-radius: var(--scale-radius-full);
+    background-color: var(--semantic-surface-contents);
+    color :var(--semantic-on-surface);
+    cursor: pointer;
+
 }
 
 .controlLang{
     margin-right: var(--scale-dimension-size-150);
-}
-.controlTheme {
-   
 }

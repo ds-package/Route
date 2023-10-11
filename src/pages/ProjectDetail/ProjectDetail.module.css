@@ -1,15 +1,24 @@
-.navigation {
-    margin-top: 32px;
-    margin-bottom: 32px;
-} 
-
 .prjTitle {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: var(--scale-dimension-size-400);
 }
 
 .prjTitle span {
-    color: var(--color-gray-500);
-    font-size: 14px;
+    color: var(--color-gray-600);
+    font-size: var(--scale-dimension-font-size-100);
+    display: flex;
+    align-items: center;
 }
 
+.prjTitle p {
+    margin: var(--scale-dimension-size-0);
+}
+
+.prjTitle a {
+    color: var(--color-gray-600);
+}
+
+.loadingScreen {
+    width: 100vw;
+    height: 100vh;
+}
