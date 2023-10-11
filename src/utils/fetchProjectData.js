@@ -42,7 +42,7 @@ const fetchProjectData = async (language) => {
         const projectMarkdownContent = extractMarkdownContent(projectContent);
 
         return {
-          id: idx,
+          id: projectTitle ? projectTitle[1] : "",
           title: projectTitle ? projectTitle[1] : "",
           date: projectDate,
           year: projectYear ? projectYear[1] : "",

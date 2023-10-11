@@ -9,9 +9,7 @@ const Menu = () => {
         About
       </Link>
       <div className={styles.link}>·</div>
-      <Link to="https://ds-package.github.io/Record/#/" target="_blank">
-        Blog
-      </Link>
+      <Link to="/blog">Blog</Link>
     </div>
   );
 };

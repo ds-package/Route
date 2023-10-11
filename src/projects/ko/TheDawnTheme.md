@@ -6,6 +6,7 @@ year: 2023
 category: Side
 description: 새벽에 글쓰기 좋은 Dawn Theme
 image: https://i.imgur.com/oD8VVtW.png
+imageAlt: 테스트입니다
 ---
 
 # Heading1
