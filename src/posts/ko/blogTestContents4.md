@@ -1,10 +1,10 @@
 ---
-title: 재밌는걸 왜 싫어하겠어요
+title: I hope you have a good day
 author: dsPack
-date: 2023-10-12
+date: 2023-10-10
 category: chatter
-description: A design system is not a finished product. It’s a continuously evolving product, just like the products it helps design
-image: https://i.pinimg.com/originals/bd/f8/66/bdf86634deed4a573d040fb64252f1b7.gif
+description: 오늘의 내가 완벽할 리 없다. 오늘과 별반 다르지 않은 어제의 나 역시 볼품없다. 일주일 전의 나도 그렇고, 1년 전 나도 그렇다.
+image: https://i.pinimg.com/originals/14/77/cd/1477cd9ed1550be977adcc2cf57a2461.gif
 imageAlt: 테스트입니다
 ---
 

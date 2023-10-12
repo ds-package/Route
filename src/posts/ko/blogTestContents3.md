@@ -1,10 +1,10 @@
 ---
-title: 블로그글을 써보자
+title: what is it
 author: dsPack
-date: 2023-10-12
-category: blog
-description: 아무렴어때요
-image: https://i.imgur.com/oD8VVtW.png
+date: 2023-10-14
+category: chatter
+description: It's not that I'm so smart, it's just that I stay with problems longer
+image: https://i.pinimg.com/originals/30/36/0a/30360a4b0e92d446707925a9e08d7274.gif
 imageAlt: 테스트입니다
 ---
 

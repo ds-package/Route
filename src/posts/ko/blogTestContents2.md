@@ -1,10 +1,10 @@
 ---
-title: 재밌는걸 왜 싫어하겠어요
+title: unTitlePosts
 author: dsPack
-date: 2023-10-12
+date: 2023-10-13
 category: chatter
-description: A design system is not a finished product. It’s a continuously evolving product, just like the products it helps design
-image: https://i.pinimg.com/originals/bd/f8/66/bdf86634deed4a573d040fb64252f1b7.gif
+description: 이미지가 네트워크에서 정상적으로 불러와지는 것은 좋은 징조입니다.
+image: https://i.pinimg.com/originals/36/cf/5e/36cf5eb1808bcf6be96f0d97d70d56a1.gif
 imageAlt: 테스트입니다
 ---
 
