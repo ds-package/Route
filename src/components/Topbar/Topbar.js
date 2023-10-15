@@ -1,7 +1,7 @@
 import React from "react";
 import { HouseSimple } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
-import Menu from "../Menu/Menu"
+import Menu from "../Menu/Menu";
 import styles from "./Topbar.module.css";
 
 const Topbar = () => {
@@ -9,7 +9,7 @@ const Topbar = () => {
     <div className={styles.topbar}>
       <Link className={styles.topbarLayout} to="/">
         <HouseSimple size={24} weight="fill" />
-        < Menu />
+        <Menu />
       </Link>
     </div>
   );

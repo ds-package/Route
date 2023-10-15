@@ -3,7 +3,8 @@
 
 body {
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height : 100%;
   overflow-x: hidden;
   margin: 0;
   font-family: "Pretendard Variable", Pretendard, -apple-system,
@@ -28,6 +29,15 @@ img {
   border-radius: var(--scale-radius-3);
 }
 
+button {
+  background-color: var(--semantic-surface-contents);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: var(--scale-radius-2);
+  border: none;
+}
 
 /* 마크다운 */
 iframe {
@@ -148,9 +158,9 @@ blockquote {
 }
 
 
-@media (max-width: 820px) {
+@media (max-width: 720px) {
   body {
-    width: 82%;
+    width: 86%;
     margin: 0 auto;
   }
 

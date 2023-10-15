@@ -99,6 +99,7 @@
     --semantic-disabled: var(--color-gray-400);
     --semantic-disabled-low: var(--color-gray-200);
     --semantic-surface-low: var(--color-gray-00);
+    --semantic-surface-blur: rgba(21, 23, 26, 0.90);
     --semantic-surface: var(--color-gray-100);
     --semantic-surface-contents: var(--color-gray-200);
     --semantic-on-surface: var(--color-gray-900);

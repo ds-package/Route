@@ -65,6 +65,7 @@
     --color-red-700: #c92a2a;
     --color-red-800: #9b0404;
     --color-red-900: #700707;
+    --color-ash-alpha-25:rgba(242, 241, 237, 0.90);
     --color-gray-alpha-25: rgba(0, 0, 0, 0.03);
     --color-gray-alpha-50: rgba(0, 0, 0, 0.05);
     --color-gray-alpha-100: rgba(0, 0, 0, 0.1);
@@ -99,6 +100,7 @@
     --semantic-disabled: var(--color-gray-400);
     --semantic-disabled-low: var(-color-gray-200);
     --semantic-surface-low: var(--color-ash-100);
+    --semantic-surface-blur: var(--color-ash-alpha-25);
     --semantic-surface: var(--color-ash-200);
     --semantic-surface-contents: var(--color-ash-500);
     --semantic-on-surface: var(--color-gray-900);

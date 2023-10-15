@@ -1,9 +1,8 @@
 .posts{
     margin-top: var(--scale-dimension-size-400);
-    
+    border-top: 1px solid var(--semantic-border-divider);
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
-
 }
 
 .postsLinks {
@@ -41,14 +40,11 @@
 }
 
 
-
-
 .postHoverImage {
     visibility: hidden; 
     opacity: 0; 
     width: 80px; 
     padding-bottom: 80px; 
-    /* border-radius: var(--scale-radius-full); */
     position: absolute; 
     transform: translate(20%, 20%) scale(0.5);           
     z-index: 9; 

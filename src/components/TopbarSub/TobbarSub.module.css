@@ -8,7 +8,7 @@
     align-items: center;
     height: 92px;
     background-color: var(--semantic-surface);
-    transition: top 0.3s ease-in-out;
+    /* transition: top 0.3s ease-in-out; */
   }
   
   .topabarSub.hidden {

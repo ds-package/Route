@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: var(--scale-dimension-size-900);
+    width: 100%;
+    max-width: 720px;
+    background-color: var(--semantic-surface-blur);
+    backdrop-filter: blur(6px);
+  
+}
+
+.footer p {
+    margin: 0;
+    font-size: var(--scale-dimension-font-size-75);
+    color: var(--color-gray-400);
+}
+
+
+.footer.hidden {
+    bottom: - var(--scale-dimension-size-900);
+  }
+  
+  .footer.visible {
+    bottom: 0;
+  }
+  

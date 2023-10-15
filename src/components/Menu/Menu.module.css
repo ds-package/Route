@@ -2,14 +2,24 @@
     display: flex;
     align-items: center;
     font-size: var(--scale-dimension-font-size-100);
+    font-weight: var(--medium);
     color: var(--color-gray-600);
 }
 
 .menu a {
     color: var(--color-gray-600);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 9999px;
+
 }
 
+.menu a:hover {
+    background-color: var(--semantic-surface-contents);
+}
 
 .link {
-    margin-right: var(--scale-dimension-size-100);
+    margin-left: var(--scale-dimension-size-100);
 }

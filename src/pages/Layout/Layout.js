@@ -4,7 +4,7 @@ import styles from "./Layout.module.css";
 
 const Layout = ({ children }) => {
   return (
-    <div className={styles.layout}>
+    <div className={styles.layout} id={styles}>
       <div>{children}</div>
       <Footer />
     </div>

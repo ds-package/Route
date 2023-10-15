@@ -1,8 +1,9 @@
 .control {
     display: flex;
     position: fixed;
-    bottom: var(--scale-dimension-size-300);
+    bottom: var(--scale-dimension-size-150);
     right:var(--scale-dimension-size-300);
+    z-index: 10;
 }
 
 .control button {
