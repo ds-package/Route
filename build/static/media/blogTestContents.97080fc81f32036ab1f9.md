@@ -1,0 +1,19 @@
+---
+title: 재밌는걸 왜 싫어하겠어요
+author: dsPack
+date: 2023-10-12
+category: chatter
+description: A design system is not a finished product. It’s a continuously evolving product, just like the products it helps design
+image: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Zipper-Mouth%20Face.png
+imageAlt: 테스트입니다
+---
+
+끊임없이 자동화해야합니다.자동화는 10분 걸리는 일을 1초로 바꿉니다. 이러한 노력의 댓가는 “시간을 10분 아낀다” 정도로 가볍지 않습니다.
+
+업무를 자동화 함에 따라 얻는 댓가는 “10분 동안 더 깊고 생산적인 고민을 한다“입니다.예를 들어, A팀은 API 요청과 응답의 JSON 인터페이스를 서버와 클라이언트 개발자가 일일히 손으로 맞춘다고 가정해봅시다.
+
+A팀에서 인터페이스를 바꾸는 일은 동료에게 리소스를 요구하는 것이기 때문에 소통 비용이 높습니다. 따라서 혹시 인터페이스에 문제가 있더라도 누구든 함부로 기존 인터페이스를 바꾸자는 이야기를 꺼내지 못합니다. (비가역적)반대로, B팀은 스키마\*를 통해 서버, 클라이언트 코드를 자동 생성한다고 합시다. 이 팀은 인터페이스를 바꾸는 것은 CLI 호출 1초면 됩니다.
+
+B팀은 인터페이스 변경이 너무나도 쉽기 때문에, 소통 비용에 대한 걱정 없이 더 많은 시도를 할 수 있습니다. (“이렇게 바꿔보면 어떨까요?“라는 질문을 신규입사자도 꺼낼 수 있습니다) 결론적으로 인터페이스 자체에 대한 더 깊은 고민을 할 수 있게 됩니다. (가역적)A팀과 B팀은 당장은 10분의 차이만 있습니다. 하지만 결과적으로 B팀은 더 지속가능하고 확장성있는 API 설계를 통해 10분보다 훨씬 더 많은 시간을 아꼈을 것입니다.
+
+- 스키마: OpenAPI Specification(JSON Schema), GraphQL, Protobuf 등
