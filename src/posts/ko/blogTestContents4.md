@@ -4,7 +4,7 @@ author: dsPack
 date: 2023-10-10
 category: chatter
 description: 오늘의 내가 완벽할 리 없다. 오늘과 별반 다르지 않은 어제의 나 역시 볼품없다. 일주일 전의 나도 그렇고, 1년 전 나도 그렇다.
-image: https://i.pinimg.com/originals/14/77/cd/1477cd9ed1550be977adcc2cf57a2461.gif
+image: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Hear-No-Evil%20Monkey.png
 imageAlt: 테스트입니다
 ---
 

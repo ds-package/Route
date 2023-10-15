@@ -1,5 +1,6 @@
 .posts{
     margin-top: var(--scale-dimension-size-400);
+    
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
 
@@ -10,22 +11,33 @@
 }
 
 .postListItem {
+    width: 100%;    
+    border-bottom: 1px solid var(--semantic-border-divider);
+}
+
+.postInfo {
     margin-bottom: var(--scale-dimension-size-400);
-    width: 60%;    
+    width: 70%;    
 }
 
 .postInfo h6 {
     margin-bottom: var(--scale-dimension-size-75);
+    margin-top: var(--scale-dimension-size-400);
 }
 
 .postNote {
-    margin-bottom: var(--scale-dimension-size-75);
+    margin-bottom: var(--scale-dimension-size-125);
     line-height: var(--static-medium);
 }
 
-.postNote, 
-.postDate {
+.postNote{
     font-size: var(--scale-dimension-font-size-100);
+    
+}
+
+.postDate {
+    font-size: var(--scale-dimension-font-size-75);
+    color: var(--color-gray-500);
 }
 
 
@@ -34,11 +46,11 @@
 .postHoverImage {
     visibility: hidden; 
     opacity: 0; 
-    width: 160px; 
-    padding-bottom: 160px; 
-    border-radius: var(--scale-radius-full);
+    width: 80px; 
+    padding-bottom: 80px; 
+    /* border-radius: var(--scale-radius-full); */
     position: absolute; 
-    transform: translate(-5%, -5%) scale(0.5);           
+    transform: translate(20%, 20%) scale(0.5);           
     z-index: 9; 
     background-size: cover;         
     transition: opacity 0.1s, visibility 0.1s, transform 0.4s;
@@ -48,5 +60,5 @@
 .postHoverImage.showImage {
     visibility: visible;
     opacity: 1;
-    transform: translate(-5%, -5%) scale(1);
+    transform: translate(20%, 20%) scale(1);
 }

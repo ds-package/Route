@@ -1,4 +1,10 @@
 .topbar {
     margin-top: var(--scale-dimension-size-400);
     margin-bottom: var(--scale-dimension-size-400);
+
 } 
+
+.topbarLayout{
+    /* display: flex; */
+    align-items: center;
+}

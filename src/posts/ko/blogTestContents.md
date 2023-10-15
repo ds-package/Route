@@ -4,7 +4,7 @@ author: dsPack
 date: 2023-10-12
 category: chatter
 description: A design system is not a finished product. It’s a continuously evolving product, just like the products it helps design
-image: https://i.pinimg.com/originals/bd/f8/66/bdf86634deed4a573d040fb64252f1b7.gif
+image: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Zipper-Mouth%20Face.png
 imageAlt: 테스트입니다
 ---
 

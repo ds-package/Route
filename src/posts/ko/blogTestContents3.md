@@ -4,7 +4,7 @@ author: dsPack
 date: 2023-10-14
 category: chatter
 description: It's not that I'm so smart, it's just that I stay with problems longer
-image: https://i.pinimg.com/originals/30/36/0a/30360a4b0e92d446707925a9e08d7274.gif
+image: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Ghost.png
 imageAlt: 테스트입니다
 ---
 

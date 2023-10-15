@@ -78,7 +78,7 @@ const BlogList = () => {
                   <div className={styles.postNote}>{post.description}</div>
                   <div className={styles.postDate}>
                     {post.date
-                      ? `${post.date.toLocaleDateString()} · ${post.category}`
+                      ? `${post.date.toLocaleDateString()} ${post.category} · `
                       : `No date available · ${post.category}`}
                   </div>
                 </div>

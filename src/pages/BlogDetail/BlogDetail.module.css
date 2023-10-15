@@ -1,0 +1,9 @@
+.postTitle {
+    width: 100%;
+    margin-bottom: var(--scale-dimension-size-400);
+}
+
+.postTitle span {
+    color: var(--color-gray-600);
+    font-size: var(--scale-dimension-font-size-100);
+}

@@ -3,7 +3,7 @@ import { LanguageContext } from "../../components/hooks/useLangs";
 import { useParams } from "react-router-dom";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
-import Topbar from "../../components/Topbar/Topbar";
+import TopabarSub from "../../components/TopbarSub/TopbarSub";
 import styles from "./BlogDetail.module.css";
 import fetchBlogData from "../../utils/fetchBlogData";
 import Markdown from "react-markdown";
@@ -47,18 +47,23 @@ const BlogDetail = () => {
   if (!post) {
     return (
       <div className={styles.loadingScreen}>
-        <Topbar />
+        <TopabarSub />
       </div>
     );
   }
 
   return (
     <div className={styles.test}>
-      <Topbar />
+      <TopabarSub />
       <div>
-        <div className={styles.prjTitle}>
+        <div className={styles.postTitle}>
           <h3>{post.title}</h3>
-          <span>날짜</span>
+          <span> 
+            {post.date
+                      ? `${post.date.toLocaleDateString()} · ${post.category}`
+                      : `No date available · ${post.category}`} 
+            
+          </span>
         </div>
         <Markdown
           children={post.content}

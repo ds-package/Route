@@ -40,10 +40,12 @@ li,
 ul,
 ol {
   line-height: var(--static-medium);
-  margin: var(--scale-dimension-size-50);
   padding-inline-start: 0.75rem;
-  list-style-type: none;
   margin: 0;
+}
+
+ul, ol {
+  margin-left: var(--scale-dimension-size-75);
 }
 
 li {
@@ -103,6 +105,13 @@ blockquote {
   background-color: var(--semantic-surface-contents);
   border-radius: var(--scale-radius-1) var(--scale-radius-3) var(--scale-radius-3) var(--scale-radius-1);
   border-left: var(--scale-dimension-size-25) solid var(--color-gray-alpha-50);
+}
+
+.footnotes {
+}
+
+.sr-only {
+  font-size: 24px;
 }
 
 /* form */

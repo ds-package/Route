@@ -27,13 +27,13 @@
     margin-bottom: var(--scale-dimension-size-75);
 }
 .projInfoText {
-    margin-bottom: var(--scale-dimension-size-75);
+    margin-bottom: var(--scale-dimension-size-125);
     line-height: var(--static-small);
 }
 
 .prjInfoItem {
-    font-size: var(--scale-dimension-font-size-100);
-    color: var(--color-gray-600);
+    font-size: var(--scale-dimension-font-size-75);
+    color: var(--color-gray-500);
     display: flex;
     align-items: center;
 }
@@ -43,12 +43,17 @@
 }
 
 
+.prjInfoItem p a {
+    color: var(--color-gray-500);
+}
+
+
 .prjImageWrap{
     box-sizing: border-box;
     display: block;
     overflow: hidden;
     width: var(--scale-dimension-size-3000);
-    height: 100%;
+    height: 80%;
     background: none;
     opacity: 1;
     border: 0px;
