@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../components/hooks/useLangs";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Topbar from "../../components/Topbar/Topbar";
@@ -34,6 +35,8 @@ const ProjectDetail = () => {
             date: selectedProject.date,
             category: selectedProject.category,
             year: selectedProject.year,
+            image: selectedProject.image,
+            description: selectedProject.description,
           });
         } else {
           console.error("Project not found.");
@@ -56,6 +59,11 @@ const ProjectDetail = () => {
 
   return (
     <div className={styles.test}>
+      <Helmet>
+        <meta property="og:title" content={project.title} />
+        <meta property="og:description" content={project.description} />
+        <meta property="og:image" content={project.image} />
+      </Helmet>
       <Topbar />
       <div>
         <div className={styles.prjTitle}>

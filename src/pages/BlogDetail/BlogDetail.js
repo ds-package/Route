@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../components/hooks/useLangs";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import TopabarSub from "../../components/TopbarSub/TopbarSub";
@@ -32,6 +33,8 @@ const BlogDetail = () => {
             content: selectedPosts.content,
             date: selectedPosts.date,
             category: selectedPosts.category,
+            image: selectedPosts.image,
+            description: selectedPosts.description,
           });
         } else {
           console.error("Project not found.");
@@ -54,15 +57,19 @@ const BlogDetail = () => {
 
   return (
     <div className={styles.test}>
+      <Helmet>
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.description} />
+        <meta property="og:image" content={post.image} />
+      </Helmet>
       <TopabarSub />
       <div>
         <div className={styles.postTitle}>
           <h3>{post.title}</h3>
-          <span> 
+          <span>
             {post.date
-                      ? `${post.date.toLocaleDateString()} · ${post.category}`
-                      : `No date available · ${post.category}`} 
-            
+              ? `${post.date.toLocaleDateString()} · ${post.category}`
+              : `No date available · ${post.category}`}
           </span>
         </div>
         <Markdown
