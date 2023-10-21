@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../components/hooks/useLangs";
 import { useParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import TopabarSub from "../../components/TopbarSub/TopbarSub";

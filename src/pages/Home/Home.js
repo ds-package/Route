@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import ProjectList from "../../components/ProjectList/ProjectList";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
