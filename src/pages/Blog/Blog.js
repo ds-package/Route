@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <div>
       <Topbar />
-      {/* <h5> Blog</h5> */}
+      <h1> Blog</h1>
       <BlogList />
     </div>
   );
