@@ -60,9 +60,14 @@ const ProjectDetail = () => {
   return (
     <div className={styles.test}>
       <Helmet>
+        <title>{project.title}</title>
         <meta property="og:title" content={project.title} />
         <meta property="og:description" content={project.description} />
         <meta property="og:image" content={project.image} />
+
+        <meta name="twitter:title" content={project.title} />
+        <meta name="twitter:description" content={project.description} />
+        <meta name="twitter:image" content={project.image} />
       </Helmet>
       <Topbar />
       <div>

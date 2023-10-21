@@ -58,9 +58,14 @@ const BlogDetail = () => {
   return (
     <div className={styles.test}>
       <Helmet>
+        <title>{post.title}</title>
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />
         <meta property="og:image" content={post.image} />
+
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.description} />
+        <meta name="twitter:image" content={post.image} />
       </Helmet>
       <TopabarSub />
       <div>
