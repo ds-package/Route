@@ -8,10 +8,10 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeContextProvider>
-    <React.StrictMode>
-      <HelmetProvider>
+    <HelmetProvider>
+      <React.StrictMode>
         <App />
-      </HelmetProvider>
-    </React.StrictMode>
+      </React.StrictMode>
+    </HelmetProvider>
   </ThemeContextProvider>
 );
