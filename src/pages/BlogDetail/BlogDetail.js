@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../components/hooks/useLangs";
 import { useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import TopabarSub from "../../components/TopbarSub/TopbarSub";
@@ -10,6 +9,7 @@ import fetchBlogData from "../../utils/fetchBlogData";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import MetaTag from "../../utils/metaTag";
 
 const BlogDetail = () => {
   const { language } = useContext(LanguageContext);
@@ -57,40 +57,12 @@ const BlogDetail = () => {
 
   return (
     <div className={styles.test}>
-      <Helmet>
-        <title>{post.title}</title>
-        <meta
-          property="og:title"
-          content={post.title}
-          data-react-helmet="true"
-        />
-        <meta
-          property="og:description"
-          content={post.description}
-          data-react-helmet="true"
-        />
-        <meta
-          property="og:image"
-          content={post.image}
-          data-react-helmet="true"
-        />
-
-        <meta
-          name="twitter:title"
-          content={post.title}
-          data-react-helmet="true"
-        />
-        <meta
-          name="twitter:description"
-          content={post.description}
-          data-react-helmet="true"
-        />
-        <meta
-          name="twitter:image"
-          content={post.image}
-          data-react-helmet="true"
-        />
-      </Helmet>
+      <MetaTag
+        title={post.title}
+        description={post.description}
+        name={post.title}
+        ogImage={post.image}
+      />
       <TopabarSub />
       <div>
         <div className={styles.postTitle}>

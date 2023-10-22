@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../components/hooks/useLangs";
 import { useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Topbar from "../../components/Topbar/Topbar";
@@ -11,6 +10,7 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import ProjectNavi from "../../components/ProjectNavi/ProjectNavi";
+import MetaTag from "../../utils/metaTag";
 
 const ProjectDetail = () => {
   const { language } = useContext(LanguageContext);
@@ -59,40 +59,12 @@ const ProjectDetail = () => {
 
   return (
     <div className={styles.test}>
-      <Helmet>
-        <title>{project.title}</title>
-        <meta
-          property="og:title"
-          content={project.title}
-          data-react-helmet="true"
-        />
-        <meta
-          property="og:description"
-          content={project.description}
-          data-react-helmet="true"
-        />
-        <meta
-          property="og:image"
-          content={project.image}
-          data-react-helmet="true"
-        />
-
-        <meta
-          name="twitter:title"
-          content={project.title}
-          data-react-helmet="true"
-        />
-        <meta
-          name="twitter:description"
-          content={project.description}
-          data-react-helmet="true"
-        />
-        <meta
-          name="twitter:image"
-          content={project.image}
-          data-react-helmet="true"
-        />
-      </Helmet>
+      <MetaTag
+        title={project.title}
+        description={project.description}
+        name={project.title}
+        ogImage={project.image}
+      />
       <Topbar />
       <div>
         <div className={styles.prjTitle}>
