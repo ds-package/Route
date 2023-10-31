@@ -8,7 +8,7 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeContextProvider>
-    <HelmetProvider>
+    <HelmetProvider context={{}}>
       <React.StrictMode>
         <App />
       </React.StrictMode>

@@ -11,7 +11,6 @@ export function MetaTag({
   ogImage,
 }) {
   return (
-    <HelmetProvider>
       <Helmet>
         {/* Standard metadata tags */}
         <title>{title}</title>
@@ -33,7 +32,6 @@ export function MetaTag({
         <meta property="twitter:url" content={url} />
         <meta name="twitter:image" content={ogImage} />
       </Helmet>
-    </HelmetProvider>
   );
 }
 
