@@ -20,7 +20,7 @@ export function MetaTag({
         <meta property="og:title" content={title} />
         <meta property="og:site_name" content={name} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={ogImage} />
+        <meta property="og:image" content="https://i.imgur.com/Xs5uOrd.png" />
         <meta property="og:url" content={url} />
         <meta property="og:type" content={type} />
 
@@ -30,7 +30,7 @@ export function MetaTag({
         <meta name="twitter:description" content={description} />
         <meta property="twitter:domain" content={customUrl} />
         <meta property="twitter:url" content={url} />
-        <meta name="twitter:image" content={ogImage} />
+        <meta name="twitter:image" content="https://i.imgur.com/Xs5uOrd.png" />
       </Helmet>
   );
 }
