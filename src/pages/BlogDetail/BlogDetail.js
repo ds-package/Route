@@ -61,7 +61,7 @@ const BlogDetail = () => {
         title={post.title}
         description={post.description}
         name={post.title}
-        ogImage={post.image}
+        ogImage="https://i.imgur.com/Xs5uOrd.png"
       />
       <TopabarSub />
       <div>
